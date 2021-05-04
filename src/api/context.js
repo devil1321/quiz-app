@@ -9,7 +9,6 @@ export const DataContext = createContext({
     dragCheck:null,
     correct:0,
     isCheck:false,
-    isReset:false,
     history:[],
     answers:'',
     isPlay:false,
@@ -47,7 +46,6 @@ export const DataContext = createContext({
     prev:()=>{},
     setAnswers:()=>{},
     setHistory:()=>{},
-    setIsReset:()=>{},
     setIsCheck:()=>{},
     setList:()=>{},
     setDragCheck:()=>{},
@@ -80,7 +78,6 @@ export const DataProvider = ({children}) => {
     const [reload,setReload] = useState(0)
 
 
-    const [isReset,setIsReset] = useState(false)
     const [isCheck,setIsCheck] = useState(false)
     const [isBack,setIsBack] = useState(false)
     const [isPlay,setIsPlay] = useState(false)
@@ -333,7 +330,6 @@ export const DataProvider = ({children}) => {
             dragCheck,
             correct,
             isCheck,
-            isReset,
             history,
             answers,
             isPlay,
@@ -366,7 +362,6 @@ export const DataProvider = ({children}) => {
             setIsPlay,
             setAnswers,
             setHistory,
-            setIsReset,
             setIsCheck,
             setList,
             setDragCheck,
