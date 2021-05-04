@@ -1,0 +1,36 @@
+.placeholder{
+    position: relative;
+    top:0px;
+    left:0px;
+    z-index:10;
+    opacity: 0;
+    margin:-30px auto 50px;
+    padding: $pad-sm-md;
+    width: 150px;
+    height: 150px;
+    animation: fadeInRight 1s ease-in-out 1.2s forwards;
+    img{
+        display: block;
+        width: 50%;
+        margin: $space-sm-md auto;
+    }
+    p{
+        margin-top: $space-sm;
+        font-size: pxToRem(12);
+        transition: all 300ms ease-in-out;
+        @include breakpoint-down(medium){
+            font-size: pxToRem(11);
+        }
+        @include breakpoint-down(medium-sm){
+            font-size: pxToRem(10);
+        }
+        @include breakpoint-down(small){
+            text-align: center;
+        }
+    }
+    &__line{
+        width:90%;
+        margin:0px auto;
+        @include setLine();
+    }
+}

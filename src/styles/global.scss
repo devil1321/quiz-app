@@ -1,0 +1,85 @@
+/*-----------------framework-start-----------------*/
+@include createCol();
+@include createOffset();
+
+.d-flex {
+    display: flex;
+}
+
+.f-w {
+    flex-wrap: wrap;
+}
+
+.f-c {
+    flex-direction: column;
+}
+
+.f-r {
+    flex-direction: row;
+}
+
+.j-c-e {
+    justify-content: flex-end;
+}
+.j-c-s {
+    justify-content: flex-start;
+}
+
+.j-c-sa {
+    justify-content: space-around;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.j-c-sb {
+    justify-content: space-between;
+}
+
+.a-i-sa {
+    align-items: space-around;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.a-i-sb {
+    align-items: space-between;
+}
+
+/*-----------------framework-end-----------------*/
+
+/*-----------------global-start------------------*/
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include breakpoint-down-l(medium){
+        overflow-y: visible;
+    }
+    @include breakpoint-down(small){
+        overflow-y: visible;
+    }
+    @include breakpoint-down-l(small){
+        overflow-y: visible;
+    }
+}
+h1{
+    font-family: $f-fam;
+    font-size: pxToRem(25);
+    font-weight: $f-slim;
+    color:$white;
+}
+P,span,h2{
+    font-family: $f-fam;
+    color:$white;
+}
+a{
+    text-decoration: none;
+}

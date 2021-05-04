@@ -1,0 +1,362 @@
+.check{
+    @include set-container;
+    position: relative;
+    left:0px;
+    top:0px;
+   
+    @media (max-width:320px) and (orientation:portrait){
+        height: 730px;
+    }
+    &__header-wrapper-top{
+        .header{
+            &__subtitle{
+                display: none;
+            }
+            &__inner{
+                margin: 0px auto;
+                width: 80%;
+            }
+            &__inner-wrapper {
+                @include breakpoint-up(medium){
+                    width:90%;
+                }
+            }
+        }
+    }
+    &__main{
+        margin-left: -20px;
+        @include breakpoint-down(small){
+            margin-left: 0px;
+        }
+        @include breakpoint-down-l(medium){
+            margin-left: 0px;
+        }
+    }
+    &__btn-quit{
+        @include btn-quit();
+    }
+    &__logo{
+        display: block;
+        margin: 0px auto 30px;
+        @include logo();
+    }
+    .placeholder{
+        margin:-30px auto 0px;
+        text-align: center;
+        &__line{
+            width: 80%;
+        }
+        @include breakpoint-down(small){
+            margin-bottom:-30px;
+        }
+    }
+    &__header-wrapper-bottom{
+        .header{
+           
+            transform: translateX(-320px);
+            @include breakpoint-down(medium){
+                transform: translateX(-190px);
+            }
+            @include breakpoint-down(medium-sm){
+                transform: translateX(-160px);
+            }
+            @include breakpoint-down-l(medium){
+                transform: translateX(-18%);
+            }
+            @include breakpoint-down(small){
+                transform: translateX(0);
+                &__count{
+                  position: relative;
+                  margin: 0px auto;
+                  right: 0px;
+                }
+            }
+            &__btn-quit,
+            &__logo,
+            &__btn-back,
+            &__btn-close{
+                display: none;
+            }
+            &__inner-wrapper{
+                @include breakpoint-down(medium){
+                    width: 55%;
+                }
+                @include breakpoint-down(medium-sm){
+                    width: 65%;
+                }
+            }
+            &__subtitle{
+                @include breakpoint-down(medium){
+                    padding:$pad-sm-md 0px;
+                }
+             
+                @include breakpoint-down(small){
+                    padding:$pad-sm-md 0px;
+                    background-image: none;
+                    margin-bottom:-60px;
+                }
+                h1{
+                    margin-left: 200px;
+                    @include breakpoint-down(medium){
+                        margin-left: 80px;
+                    }
+                    @include breakpoint-down(medium-sm){
+                        margin-left: -20px;
+                    }
+                    @include breakpoint-down(small){
+                        margin-left: -20px;
+                        display: none;
+                    }
+               
+                }
+              
+            }
+            &__count{
+                top:-30px;
+                width: 100px;
+                height: 100px;
+                font-size:pxToRem(25);
+                @include breakpoint-down(medium){
+                    top:-20px;
+                }
+               
+            }
+        }
+    }
+    &__category{
+        height: 80%;
+        position: absolute;
+        right: 140px;
+        top:50%;
+        width:150px;
+        z-index: 10;
+        text-align: left;
+        transform: translateY(-35%);
+        @media (min-width:1366px) and (min-height:1024px) and (orientation:landscape){
+            transform: translateY(-45%);
+        }
+        @include breakpoint-down(medium){
+            transform: translateY(-52%);
+            right: 7%;
+        }
+        @media (max-width:768px) and (max-height:1024px){
+            right: 5%;
+        }
+        @include breakpoint-down(small){
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left:0px;
+            top:20px;
+            transform: translateY(0%);
+        }
+        @include breakpoint-down-l(medium){
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            left:0px;
+            top:20px;
+            transform: translateY(0%);
+        }
+        @media (max-width:320px){
+            height: 70px;
+        }
+        p{
+            @include breakpoint-down-l(medium){
+                margin-bottom: -20px;
+            }
+            @include breakpoint-down-l(small){
+                margin-bottom: 0px;
+            }
+        }
+        .nav{
+            display: block;
+            justify-content: center;
+            @include breakpoint-down(small){
+                height: 170px;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+            }
+            @include breakpoint-down-l(medium){
+                height: 130px;
+                margin-top: 25px;
+                display: flex;
+                flex-direction: row;
+            }
+            @media (width:411px){
+                margin-top: 0px;
+            }
+            @media (max-width:360px){
+                margin-top: -20px;
+            }
+            @media (max-width:320px){
+                margin-top: 30px;
+            }
+            &__item{
+                margin-bottom: -20px;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                @include breakpoint-down(small){
+                    width: 80px;
+                    height:80px;
+                    padding: 10px;
+                }
+                @media (max-width:376px){
+                    width: 70px;
+                    height:70px;
+                }
+                @media (max-width:360px){
+                    width: 70px;
+                    height:70px;
+                }
+                @media (max-width:320px){
+                    width: 100px;
+                    height:100px;
+                    margin: 20px 5px;
+                }
+            
+              
+                P{
+                    font-size: pxToRem(7.5);
+                }
+            }
+        }
+        .to-next-line{
+            @include breakpoint-up(large){
+                display: block;
+            }
+            
+        }
+    }
+    .button{
+        &:hover{
+            @include btn-transition(10px);
+        }
+       p{
+           margin-left: 10px;
+       }
+    }
+   
+    &.technology{
+        background-image: url('../../../../assets/technology/background_check_normal.jpg');
+        @include background-cover;
+        // prototype
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 270%;
+            background-position:20% -100px;
+        }
+        @include breakpoint-down(small){
+            background-size: 400%;
+        }
+        @media (max-width:320px){
+            background-size: 470%;
+        }
+        .nav{
+            &__item{
+                &.tech{
+                    display: none !important;
+                }
+            }
+        }
+        
+    }
+    &.culture{
+        background-image: url('../../../../assets/culture/background_check_normal.jpg');
+        @include background-cover;
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 300%;
+            background-position: 0px -100px;
+        }
+        @include breakpoint-down(small){
+            background-size: 400%;
+            background-position: 20% -100px;
+        }
+        @media (max-width:320px){
+            background-size: 470%;
+        }
+        .nav{
+            &__item{
+                &.cul{
+                    display: none !important;
+                }
+            }
+        }
+        
+    }
+    &.automotive{
+        background-image: url('../../../../assets/automotive/background_check.jpg');
+        @include background-cover;
+        // prototype
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down-l(medium){
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 270%;
+            background-position: 0% -100px;
+        }
+        @include breakpoint-down(small){
+            background-size: 370%;
+        }
+        @media(max-width:320px){
+            background-position: 0% 0px;
+            background-size: 450%;
+        }
+        .nav{
+            &__item{
+                &.auto{
+                    display: none !important;
+                }
+            }
+        }
+        
+    }
+    &.code{
+        background-image: url('../../../../assets/code/background_check_normal.png');
+        @include background-cover;
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 200%;
+            background-position: 50% 50%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 400%;
+            background-position: 50% -100px;
+        }
+        @media (max-width:320px){
+            
+            background-size:470%;
+            background-position: 50% -100px;
+        }
+        .nav{
+            &__item{
+                &.prog{
+                    display: none !important;
+                }
+            }
+        }
+        
+    }
+    &.history{
+       @include HistoryBackground();
+        .nav{
+            &__item{
+                &.his{
+                    display: none !important;
+                }
+            }
+        }
+        
+    }
+}

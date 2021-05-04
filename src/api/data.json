@@ -1,0 +1,768 @@
+
+    {
+        "technology":{
+            "list":{
+                "questions":[
+                    {
+                        "question":"Ułóż chronologicznie największe firmy IT z polskim kapitałem w roku 2019",
+                        "answers":[
+                            "NTT System",
+                            "APN Promise",
+                            "Asseco Poland",
+                            "Integrated Solutions",
+                            "Comarch"
+                        ],
+                        "correct":[
+                            "Comarch",
+                            "Asseco Poland",
+                            "Integrated Solutions",
+                            "APN Promise",
+                            "NTT System"
+                        ]
+                    },
+                    {
+                        "question":"Ułóż najpopularniejsze spółki według rankingu bankier ?",
+                        "answers":[
+                            "PGE",
+                            "CD Projekt",
+                            "Biomed-Lublin",
+                            "Mabion",
+                            "Mercator"
+                        ],
+                        "correct":[
+                            "CD Projekt",
+                            "Biomed-Lublin",
+                            "Mercator",
+                            "Mabion",
+                            "PGE"
+                        ]
+                    }]
+            },
+            "drag_check":{
+                "questions":[
+                    {
+                        "question":"1. Które medium transmisyjne należy zastosować, aby połączyć dwa punkty dystrybucyjne odległe od siebie o 600 m ?",
+                        "answers":[
+                            "A. światłowód",
+                            "B. skrętkę STP",
+                            "C. przewód koncentryczny",
+                            "D. skrętkę UTP",
+                            "E. RJ-45"
+                        ],
+                        "correct":"A. światłowód"
+                    },
+                    {
+                        "question":"2. Która usługa serwerowa zapewnia automatyczną konfigurację parametrów sieciowych stacji roboczych ?",
+                        "answers":[
+                            "A. DNS",
+                            "B. WINS",
+                            "C. DHCP",
+                            "D. NAT",
+                            "E. Chmura Cloud"
+                        ],
+                        "correct":"C. DHCP"
+                    },
+                    {
+                        "question":"3. W firmowej sieci bezprzewodowej została uruchomiona usługa polegająca na tłumaczeniu nazw mnemonicznych. Jest to usługa ?",
+                        "answers":[
+                            "A. RADIUS",
+                            "B. RDS",
+                            "C. DNS",
+                            "D. DHCP",
+                            "E. HTTPS"
+                        ],
+                        "correct":"C. DNS"
+                    },
+                    {
+                        "question":"4. Na rysunku przedstawiono sieć komputerową w topologii ?",
+                        "answers":[
+                            "A. magistrali",
+                            "B. siatki",
+                            "C. pierścienia",
+                            "D. gwiazdy",
+                            "E. podwójnego pierścienia"
+                        ],
+                        "correct":"C. pierścienia"
+                    },
+                    {
+                        "question":"5. Przydzielaniem adresów IP w sieci zajmuje się serwer ?",
+                        "answers":[
+                            "A. NetBIOS",
+                            "B. DNS",
+                            "C. DHCP",
+                            "D. NMP",
+                            "E. NAT"
+                        ],
+                        "correct":"C. DHCP"
+                    },
+                    {
+                        "question":"6.  Apache jest serwerem ?",
+                        "answers":[
+                            "A. DNS",
+                            "B. DHCP",
+                            "C. WWW",
+                            "D. Baz danych",
+                            "E. Jest Chmura"
+                        ],
+                        "correct":"C. WWW"
+                    },
+                    {
+                        "question":"7. Które urządzenie sieciowe pozwala połączyć sieć LAN z WAN ?",
+                        "answers":[
+                            "A. Switch",
+                            "B. Repeater",
+                            "C. Router",
+                            "D. Hub",
+                            "E. Serwer"
+                        ],
+                        "correct":"C. Router"
+                    },
+                    {
+                        "question":"8. Który z wtyków należy zamontować na przewodzie UTP Cat 5e, by podłączyć komputer do sieci ?",
+                        "answers":[
+                            "A. RJ45",
+                            "B. MT-RJ",
+                            "C. RJ11",
+                            "D. BNC",
+                            "E. BS 1363"
+                        ],
+                        "correct":"A. RJ45"
+                    },
+                    {
+                        "question":"9. Architektura fizyczna sieci, zwana inaczej topologią fizyczną sieci komputerowych określa ?",
+                        "answers":[
+                            "A. standardy komunikacyjne sieci komputerowych",
+                            "B. przekaz informacji pomiędzy protokołami sieciowymi modelu OSI",
+                            "C. wzajemną komunikację komputerów pomiędzy sobą",
+                            "D. sposób połączenia ze sobą komputerów",
+                            "E. sposob zasilania sieci"
+                        ],
+                        "correct":"D. sposób połączenia ze sobą komputerów"
+                    },
+                    {
+                        "question":"10. Do zarobienia końcówek kabla UTP jest stosowany wtyk ?",
+                        "answers":[
+                            "A. 8P8C",
+                            "B. RS232",
+                            "C. DVI",
+                            "D. BNC",
+                            "E. RJ-45"
+                        ],
+                        "correct":"A. 8P8C"
+                    }
+                ]
+            }
+        },      
+        "culture":{
+            "list":{
+                "questions":[
+                    {
+                        "question":"Ułóż epoki literackie kultury polskiej",
+                        "answers":[
+                            "Barok – XVII w",
+                            "Renesans – XVI/XVII w",
+                            "Romantyzm – XIX, 1822–1863",
+                            "Oświecenie – XVIII w",
+                            "Średniowiecze – do XIV/XV wieku"
+                        ],
+                        "correct":[
+                            "Średniowiecze – do XIV/XV wieku",
+                            "Renesans – XVI/XVII w",
+                            "Barok – XVII w",
+                            "Oświecenie – XVIII w",
+                            "Romantyzm – XIX, 1822–1863"
+                        ]
+                    },
+                    {
+                        "question":"Ułóż w kolejności chronologicznej wydarzenia związane z historią narodu żydowskiego",
+                        "answers":[
+                            "Wyjście z Egiptu",
+                            "Panowanie Salomona",
+                            "Okres patriarchów",
+                            "Niewola egipska",
+                            "Niewola babilońska"
+                        ],
+                        "correct":[
+                            "Okres patriarchów",
+                            "Niewola egipska",
+                            "Wyjście z Egiptu",
+                            "niewola babilońska",
+                            "Panowanie Salomona"
+                        ]
+                    }]
+            },
+            "drag_check":{
+                "questions":[
+                    {
+                        "question":"1. Obraz poniżej to \"Pochodnie Nerona\" Henryka Siemiradzkiego. Był on jednym z przedstawicieli ?",
+                        "answers":[
+                            "A. Historycyzmu",
+                            "B. Akademizmu",
+                            "C. Manieryzmu",
+                            "D. Nurtu prerafaelitów",
+                            "E. Nepotyzmu"
+                        ],
+                        "correct":"B. Akademizmu"
+                    },
+                    {
+                        "question":"2. Jakie wydarzenia historyczne ukształtowały epokę renesansu ?",
+                        "answers":[
+                            "A. Założenie akademii Krakowskiej 1354 roku",
+                            "B. Odkrycia geograficzne",
+                            "C. Wystąpienie Marcina Lutra",
+                            "D. 1791 – Konstytucja 3 maja",
+                            "E. 1793 – II rozbiór Polski"
+                        ],
+                        "correct": "B. Odkrycia geograficzne"
+                    },
+                    {
+                        "question":"3. Humanizm, przewodnie hasło renesansu wywodzi się z ?",
+                        "answers":[
+                            "A. Biblii",
+                            "B. Jest hasłem ukutym w epoce renesansu",
+                            "C. Antyku",
+                            "D. Oświecenia",
+                            "E. Angli"
+                        ],
+                        "correct":"C. Antyku"
+                    },
+                    {
+                        "question":"4. Antropocentryzm to idea przeciwstawiona ?",
+                        "answers":[
+                            "A. Humanizmowi",
+                            "B. Średniowiecznemu teocentryzmowi",
+                            "C. Religiom reformowanym",
+                            "D. Oświeceniu",
+                            "E. Neronowi"
+                        ],
+                        "correct":"B. Średniowiecznemu teocentryzmowi"
+                    },
+                    {
+                        "question":"5. Czołowe wyznanie powstałe w czasie reformacji to ?",
+                        "answers":[
+                            "A. Luteranizm",
+                            "B. Antropocentryzm",
+                            "C. Mistycyzm",
+                            "D. Buddyzm",
+                            "E. Islam"
+                        ],
+                        "correct":"A. Luteranizm"
+                    },
+                    {
+                        "question":"6. Utopia to ?",
+                        "answers":[
+                            "A. Zatopiona wyspa niegdyś mieszcząca się na Pacyfiku",
+                            "B. Tytuł znanej książki Tomasza Morusa",
+                            "C. Gatunek literacki",
+                            "D. Miejsce pochodzenia M.Lutra",
+                            "E. Park w Pensylwanii"
+                        ],
+                        "correct":"B. Tytuł znanej książki Tomasza Morusa"
+                    },
+                    {
+                        "question":"7. Termin makiawelizm oznacza ?",
+                        "answers":[
+                            "A. Skrytobójczą walkę w obronie ojczyzny",
+                            "B. Pokrętne i relatywne moralnie metody działalności politycznej",
+                            "C. Sposób uprawiania publicystyki",
+                            "D. Normy społeczne epoki renesansu",
+                            "E. Przebiegłość"
+                        ],
+                        "correct":"B. Pokrętne i relatywne moralnie metody działalności politycznej"
+                    },
+                    {
+                        "question":"8. Zjawiskiem kształtującym kulturę i sztukę renesansu był ?",
+                        "answers":[
+                            "A. Mecenat",
+                            "B. Makiawelizm",
+                            "C. Reformacja",
+                            "D. Rewolucja przemysłowa",
+                            "E. Skrytobójstwo"
+                        ],
+                        "correct":"A. Mecenat"
+                    },
+                    {
+                        "question":"9. Pieśni Kochanowskiego są w dużej mierze wzorowane na utworach ?",
+                        "answers":[
+                            "A. Horacego",
+                            "B. Petrarki",
+                            "C. Dantego",
+                            "D. Słowackiego",
+                            "E. Sienkiewicza"
+                        ],
+                        "correct":"A. Horacego"
+                    },
+                    {
+                        "question":"10. Utwór Czego chcesz od nas Panie… to pod względem gatunkowym ?",
+                        "answers":[
+                            "A. Pieśń",
+                            "B. Hymn",
+                            "C. Tren",
+                            "D. Nowela",
+                            "E. Fraszka"
+                        ],
+                        "correct":"B. Hymn"
+                    }
+                ]
+            }
+        },
+        "automotive":{
+            "list":{
+                "questions":[
+                    {
+                        "question":"Ułóż modele Forda według roku",
+                        "answers":[
+                            "Focus Classic",
+                            "Mondeo",
+                            "S-Max",
+                            "Ixion",
+                            "Fiesta"
+                        ],
+                        "correct":[
+                            "Ixion",
+                            "S-Max",
+                            "Focus Classic",
+                            "Fiesta",
+                            "Mondeo"
+                        ]
+                    },
+                    {
+                        "question":"Najpopularniejszych samochodów osobowych w Polsce",
+                        "answers":[
+                            "Skoda Fabia 2020",
+                            "Toyota Yaris 2020",
+                            "Renault Clio 2020",
+                            "Dacia Duster 2020",
+                            "Toyota RAV4 2020"
+                        ],
+                        "correct":[
+                            "Toyota Yaris 2020",
+                            "Dacia Duster 2020",
+                            "Skoda Fabia 2020",
+                            "Toyota RAV4 2020",
+                            "Renault Clio 2020"
+                        ]
+                    }]
+            },
+            "drag_check":{
+                "questions":[
+                    {
+                        "question":"1. W którym Polskim mieście Fiat produkuje samochody ?",
+                        "answers":[
+                            "A. W Gliwicach",
+                            "B. W Bielsku-Białej",
+                            "C. We Wrześni",
+                            "D. W Tychach",
+                            "E. W Rzeszowie"
+                        ],
+                        "correct":"D. W Tychach"
+                    },
+                    {
+                        "question":"2. Jak oznacza się napęd na cztery koła w samochodach Audi?",
+                        "answers":[
+                            "A. 4Matic",
+                            "B. X-Drive",
+                            "C. Syncro",
+                            "D. Quattro",
+                            "E. 4x4"
+                        ],
+                        "correct":"D. Quattro"
+                    },
+                    {
+                        "question":"3. Który Polski samochód był napędzany dwusuwowym silnikiem ?",
+                        "answers":[
+                            "A. Fiat 126p",
+                            "B. Syrena",
+                            "C. Fiat 125p",
+                            "D. Polonez",
+                            "E. Warszawa"
+                        ],
+                        "correct":"B. Syrena"
+                    },
+                    {
+                        "question":"4. Który z tych modeli nie był produkowany przez Forda ?",
+                        "answers":[
+                            "A. Scorpio",
+                            "B. Taurus",
+                            "C. Cougar",
+                            "D. Scirocco",
+                            "E. Edge"
+                        ],
+                        "correct":"C. System zarządzania bazą danych"
+                    },
+                    {
+                        "question":"5. Z którym koncernem Fiat był kiedyś w koalicji ?",
+                        "answers":[
+                            "A. General Motors",
+                            "B. Ford Motor Company",
+                            "C. Daimler",
+                            "D. Hyundai Motor Company",
+                            "E. Toyota"
+                        ],
+                        "correct":"A. General Motors"
+                    },
+                    {
+                        "question":"6. Który z tych modeli jest reklamowany jako 4 drzwowie coupe ?",
+                        "answers":[
+                            "A. Maserati Quattroporte",
+                            "B. BMW X6",
+                            "C. Mercedes CLS",
+                            "D. Volvo S90",
+                            "E. Mazda RX8"
+                        ],
+                        "correct":"C. Mercedes CLS"
+                    },
+                    {
+                        "question":"7. Do którego koncernu należy Niemiecka marka Opel ?",
+                        "answers":[
+                            "A. Ford Motor Company",
+                            "B. General Motors",
+                            "C. Tata Group",
+                            "D. PSA Peugeot Citroen",
+                            "E. Toyota"
+                        ],
+                        "correct":"D. PSA Peugeot Citroen"
+                    },
+                    {
+                        "question":"8. Który z tych modeli nie był Fiatem ?",
+                        "answers":[
+                            "A. Panda",
+                            "B. Utopia",
+                            "C. Linea",
+                            "D. Idea",
+                            "E. Tipo    "
+                        ],
+                        "correct":"B. Utopia"
+                    },
+                    {
+                        "question":"9. Jak nazywa się firma, która stworzył Elon Musk ?",
+                        "answers":[
+                            "A. Fisker Motors",
+                            "B. Tesla Motors",
+                            "C. Faraday Future",
+                            "D. Mobileye",
+                            "E. Lexus"
+                        ],
+                        "correct":"B. Tesla Motors"
+                    },
+                    {
+                        "question":"10. W którym roku rozpoczęto produkcję współczesnej Skody Octavii ?",
+                        "answers":[
+                            "A. 1996",
+                            "B. 2001",
+                            "C. 1995",
+                            "D. 1998",
+                            "E. 1994"
+                        ],
+                        "correct":"A. 1996"
+                    }
+                ]
+            }
+        },
+        "code":{
+            "list":{
+                "questions":[
+                    {
+                        "question":"Ułóż frameworki php od najwcześniejszego",
+                        "answers":[
+                            "Yii Framework",
+                            "CakePHP",
+                            "Zend Framework",
+                            "CodeIgniter",
+                            "Laravel"
+                        ],
+                        "correct":[
+                            "Zend Framework",
+                            "CakePHP",
+                            "Laravel",
+                            "CodeIgniter",
+                            "Yii Framework"
+                        ]
+                    },
+                    {
+                        "question":"Ułóż frameworki JavaScript od najwcześniejszego",
+                        "answers":[
+                            "Vue",
+                            "BackboneJS",
+                            "Angular",
+                            "React",
+                            "jQuery"
+                        ],
+                        "correct":[
+                            "jQuery",
+                            "Angular",
+                            "BackboneJS",
+                            "React",
+                            "Vue"
+                        ]
+                    }]
+            },
+            "drag_check":{
+                "questions":[
+                    {
+                        "question":"1. Który z wymienionych systemów nie jest systemem CMS?",
+                        "answers":[
+                            "A. Joomla!",
+                            "B. WordPress",
+                            "C. Adobe Flash",
+                            "D. Drupal",
+                            "E. ModX"
+                        ],
+                        "correct":"C. Adobe Flash"
+                    },
+                    {
+                        "question":"2. Które ze stwierdzeń dotyczących języków programowania NIE jest prawdziwe?",
+                        "answers":[
+                            "A. JavaScript jest językiem skryptowym",
+                            "B. PHP nie jest interpretowane przez przeglądarkę",
+                            "C. SQL jest językiem programowania strukturalnego",
+                            "D. HTML to język opisowy",
+                            "E. Python to język kompilowalny"
+                        ],
+                        "correct":"C. SQL jest językiem programowania strukturalnego"
+                    },
+                    {
+                        "question":"3. Kod źródłowy strony www napisanej w języku PHP",
+                        "answers":[
+                            "A. Może być uruchomiony bez obsługi serwera WWW",
+                            "B. Kest przetwarzany na tych samych zasadach co JavaScript",
+                            "C. Jest wykonywany po stronie serwera",
+                            "D. Jest wykonywany po stronie klienta",
+                            "E. Jest najpierw kompilowalny i dopiero wykonwany"
+                        ],
+                        "correct":"C. jest wykonywany po stronie serwera"
+                    },
+                    {
+                        "question":"4. Co to jest DBMS?",
+                        "answers":[
+                            "A. Kaskadowy arkusz stylów do opisu wyglądu witryny",
+                            "B. Strukturalny język zapytań kierowanych do bazy danych",
+                            "C. System zarządzania bazą danych",
+                            "D. Obiektowy język programowania do generowania witryn",
+                            "E. Framework baz danych MySQL i MongoDB"
+                        ],
+                        "correct":"C. System zarządzania bazą danych"
+                    },
+                    {
+                        "question":"5. Jak nazywa się technika umożliwiająca otwarcie połączenia klienta z serwerem i komunikację bez przeładowania całej strony, w sposób asynchroniczny?",
+                        "answers":[
+                            "A. jQuery",
+                            "B. Jasmine",
+                            "C. AJAX",
+                            "D. SASS",
+                            "E. REACT"
+                        ],
+                        "correct":"C. AJAX"
+                    },
+                    {
+                        "question":"6. Prekompilatorem CSS nie jest",
+                        "answers":[
+                            "A. ECMA",
+                            "B. Stylus",
+                            "C. LESS",
+                            "D. SASS",
+                            "E. MySQL"
+                        ],
+                        "correct":"A. ECMA"
+                    },
+                    {
+                        "question":"7. Aby zamieścić aplikację webową w internecie, należy jej pliki źródłowe skopiować na serwer za pomocą protokołu?",
+                        "answers":[
+                            "A. FTP",
+                            "B. JSON",
+                            "C. HTTP",
+                            "D. AJAX",
+                            "E. SSL"
+                        ],
+                        "correct":"A. FTP"
+                    },
+                    {
+                        "question":"8. Wskaż listę zawierającą jedynie technologie back-endowe",
+                        "answers":[
+                            "A. Bootstrap, React, Gulp",
+                            "B. Socket.io, SASS, RubyOnRails",
+                            "C. Node.js, Django, Laravel",
+                            "D. Python, Sinatra, Angular",
+                            "E. HTML, CSS, SCSS"
+                        ],
+                        "correct":"C. Node.js, Django, Laravel"
+                    },
+                    {
+                        "question":"9. Który z frameworków nie jest oparty na języku PHP?",
+                        "answers":[
+                            "A. Zend",
+                            "B. Foundation",
+                            "C. Symfony",
+                            "D. Laravel",
+                            "E. CodeIgniter"
+                        ],
+                        "correct":"B. Foundation"
+                    },
+                    {
+                        "question":"10. Kaskadowe arkusze stylów tworzy się w celu?",
+                        "answers":[
+                            "A. połączenia struktury dokumentu strony z właściwą formą jego prezentacji",
+                            "B. nadpisywania wartości znaczników już ustawionych na stronie",
+                            "C. blokowania jakichkolwiek zmian w wartościach znaczników już przypisanych w pliku CSS",
+                            "D. ułatwienia formatowania strony",
+                            "E. w celu zabezpieczenia strony przed włamaniem"
+                        ],
+                        "correct":"D. ułatwienia formatowania strony"
+                    }
+                ]
+            }
+        },
+        "history":{
+            "list":{
+                "questions":[
+                    {
+                        "question":"Ułóż w kolejności chronologicznej władców Polski",
+                        "answers":[
+                            "Mieszko II",
+                            "Bolesław II Śmiały/Szczodry",
+                            "Kazimierz Odnowiciel",
+                            "Bolesław Chrobry",
+                            "Mieszko I"
+                        ],
+                        "correct":[
+                            "Mieszko I",
+                            "Bolesław Chrobry",
+                            "Mieszko II",
+                            "Kazimierz Odnowiciel",
+                            "Bolesław II Śmiały/Szczodry"
+                        ]
+                    },
+                    {
+                        "question":"Ułóż daty od najstarszej",
+                        "answers":[
+                            "1871 rok 19 wiek",
+                            "2002 rok 21 wiek",
+                            "578 rok 6 wiek",
+                            "2 rok p.n.e 1 wiek p.n.e",
+                            "1914 rok 20 wiek"
+                        ],
+                        "correct":[
+                            "2 rok p.n.e 1 wiek p.n.e",
+                            "578 rok 6 wiek",
+                            "1871 rok 19 wiek",
+                            "1914 rok 20 wiek",
+                            "2002 rok 21 wiek"
+                        ]
+                    }]
+            },
+            "drag_check":{
+                "questions":[
+                    {
+                        "question":"1. W jakim państwie wybuchła pierwsza rewolucja w Europie ?",
+                        "answers":[
+                            "A. w Polsce",
+                            "B. we Włoszech",
+                            "C. w Hiszpanii",
+                            "D. we Francji",
+                            "E. w Macedonii"
+                        ],
+                        "correct":"D. we Francji"
+                    },
+                    {
+                        "question":"2. Jak nazywało się polskie powstanie narodowe przeciw Rosji i Prusom w 1794 roku ?",
+                        "answers":[
+                            "A. Wiosna Ludów",
+                            "B. insurekcja kościuszkowska",
+                            "C. powstanie listopadowe",
+                            "D. powstanie styczniowe",
+                            "E. powstanie Jaggielońskie"
+                        ],
+                        "correct":"B. insurekcja kościuszkowska"
+                    },
+                    {
+                        "question":"3. Z jakiej dynastii pochodził Zygmunt II August ?",
+                        "answers":[
+                            "A. Piastów",
+                            "B. Jaggielonów",
+                            "C. Andegawenów",
+                            "D. był władcą elekcyjnym",
+                            "E. Wazowiczów"
+                        ],
+                        "correct":"B. Jaggielonów"
+                    },
+                    {
+                        "question":"4. W którym roku odbywały się obrady Okrągłego Stołu w Polsce ?",
+                        "answers":[
+                            "A. w 1745",
+                            "B. w 1838",
+                            "C. w 1911",
+                            "D. w 1989",
+                            "E. w 1410"
+                        ],
+                        "correct":"D. w 1989"
+                    },
+                    {
+                        "question":"Pomarańczowa rewolucja to wydarzenie, które miało miejsce ?",
+                        "answers":[
+                            "A. we Włoszech",
+                            "B. w Rosji",
+                            "C. na Ukrainie",
+                            "D. w Polsce",
+                            "E. w Anglii"
+                        ],
+                        "correct":"C. na Ukrainie"
+                    },
+                    {
+                        "question":"6. Godzina \"W\" wybiła o ?",
+                        "answers":[
+                            "A. 12:00",
+                            "B. 15:00",
+                            "C. 17:00",
+                            "D. 21:00",
+                            "E. 23:00"
+                        ],
+                        "correct":"C. 17:00"
+                    },
+                    {
+                        "question":"7. Kto był ostatnim królem Polski ?",
+                        "answers":[
+                            "A. Jan III Sobieski",
+                            "B. Stanisław August Poniatowski",
+                            "C. Stefan Batory",
+                            "D. Henryk Walezy",
+                            "E. Zygmunt III Waza"
+                        ],
+                        "correct":"B. Stanisław August Poniatowski"
+                    },
+                    {
+                        "question":"8. ak miał na imię książę Poniatowski ?",
+                        "answers":[
+                            "A. Józef",
+                            "B. Henryk",
+                            "C. Mikołaj",
+                            "D. Zygmunt",
+                            "E. Stanisław"
+                        ],
+                        "correct":"A. Józef"
+                    },
+                    {
+                        "question":"9. Największym powstaniem na terytorium Polski było ?",
+                        "answers":[
+                            "A. powstanie Styczniowe",
+                            "B. powstanie Listopadowe",
+                            "C. powstanie Warszawskie",
+                            "D. Wiosna Lódów",
+                            "E. powstanie Kościuszkowskie"
+                        ],
+                        "correct":"A. powstanie Styczniowe"
+                    },
+                    {
+                        "question":"10. Który król Anglii ustanowił anglikanizm ?",
+                        "answers":[
+                            "A. Wilhelm I Zdobywca",
+                            "B. Henryk VII Tudor",
+                            "C. Karol II",
+                            "D. Olivier Cromwell",
+                            "E. William Shakespeare"
+                        ],
+                        "correct":"B. Henryk VII Tudor"
+                    }
+                ]
+            }
+        }  
+    }

@@ -1,0 +1,20 @@
+/*-----------------set------------------------*/
+@import '../../variables';
+@import '../../mixins';
+@import '../../fonts';
+@import '../../global';
+@import '../../animations';
+/*-----------------components-----------------*/
+@import './components/navbar';
+@import './components/header';
+@import './components/button';
+@import './components/placeholder';
+@import './components/question';
+@import './components/draggable-btn';
+@import './components/drop-place';
+/*-----------------pages----------------------*/
+@import './pages/Home';
+@import './pages/Play';
+@import './pages/Questions';
+@import './pages/DragAndDrop';
+@import './pages/Check';

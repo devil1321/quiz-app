@@ -1,0 +1,80 @@
+.home{
+    @include set-container();
+    background-size: 100%;
+    &.technology{
+       
+        background-image: url('../../../../assets/technology/background_check_normal.jpg');
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape){
+            background-size: 200%;
+        }
+  
+        @include breakpoint-down(medium){
+            background-size: 270%;
+            background-position: 20% -100px;
+        }
+        @include breakpoint-down(small){
+            background-size: 450%;
+        }
+        @include breakpoint-down-l(medium){
+            background-size: 200%;
+        }
+    }
+    &.culture{
+        background-image: url('../../../../assets/culture/background_check_normal.jpg');
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 300%;
+        }
+        @include breakpoint-down(small){
+            background-size: 370%;
+        }
+        @media (max-width:320px){
+            background-size: 400%;
+        }
+    }
+    &.automotive{
+        background-image: url('../../../../assets/automotive/background_check.jpg');
+        background-size: cover;
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 250%;
+        }
+        @include breakpoint-down(small){
+            background-size: 350%;
+        }
+        @media (max-width:320px){
+            background-size: 400%;
+        }
+      
+    }
+    &.code{
+        background-image: url('../../../../assets/code/background_home_normal.jpg');
+
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+            background-size: 150%;
+            background-position: 100% 0%;
+        }
+
+        @include breakpoint-down(medium){
+            background-size: 240%;
+        }
+        @include breakpoint-down-l(medium){
+            background-size: 175%;
+            background-position:100% 0%;
+        }
+        @include breakpoint-down(small){
+            background-size: 340%;
+        }
+        @media (min-width:540px) and (max-width:540px){
+            background-size: 240%;
+        }
+        
+    }
+    &.history{
+      @include HistoryBackground();
+    }
+}
