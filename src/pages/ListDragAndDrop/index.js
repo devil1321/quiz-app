@@ -2,7 +2,6 @@ import React,{useState ,useEffect,useContext} from 'react'
 import { useHistory,useLocation } from 'react-router-dom'
 import {DataContext} from '../../api/context'
 import Header from '../../components/Header'
-import DropPlace from '../../components/DropPlace'
 import DragAnswer from '../../components/DragAnswer'
 import Question from '../../components/Question'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
@@ -12,21 +11,18 @@ const ListDragAndDrop = ({theme}) => {
     const  browserHistory = useHistory()
     const [isCorrect,setIsCorrect] = useState(false)
     const [isFalse,setIsFalse] = useState(false)
-    
     let location = useLocation()
     let path = location.pathname
     useEffect(()=>{
         setScss(theme,path)
         setIsFalse(false)
         setIsCorrect(false)
-        
         if(isLoad !== true && !isBack && !isCheck && listIndex < 2){          
             setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex,theme)
         }else if(isCheck && isBack && listIndex < 2){
             setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex,theme)
             questionIn()
         }
-        
         if(listIndex == 0){
             setIndex(-1)
         }
@@ -34,7 +30,6 @@ const ListDragAndDrop = ({theme}) => {
         if(listIndex == 1){
             setIndex(1)
         }
-        console.log(index)
         let tempLocation = [...locationHistory]
         tempLocation[listIndex] = path
         setLocationHistory(tempLocation)
@@ -58,12 +53,11 @@ const ListDragAndDrop = ({theme}) => {
             setIsFalse(true)
         }
         setThemeURL(theme)
-        if(reload < 2) setReload(reload + 1)
-        
+        if(reload < 2) setReload(reload + 1)        
     },[index,listIndex,reload,isCheck,isCorrect,isFalse,question,isBack])
     // do contextu
     return (
-        <div className={`draggable ${theme}`} >
+        <div className={`draggable ${theme} list`} >
             <Header theme={theme} subtitle="DRAG & DROP THE RIGHT ANSWER" current={listIndex+1} max="2"/>
             <Question question={question} nr={`${listIndex+1}. `}/>
             <div className="draggable__action">
@@ -73,7 +67,7 @@ const ListDragAndDrop = ({theme}) => {
                     {isFalse? <h2 className="draggable__answer">Wrong<div className="draggable__wrong-text"></div></h2> : null}
                     <div className="draggable__answers">
                         {answers.map((text,index)=> 
-                            <Droppable  key={text}  droppableId={`draggable__row-${index}`} direction="horizontal" >
+                            <Droppable  key={text}  droppableId={`draggable__row-${index}`} direction={"horizontal"} >
                                 {(provided)=>(
                                 <div className={`draggable__row-${index} draggable--row`}  {...provided.draggableProps} ref={provided.innerRef}>
                                     <DragAnswer correct={correct} index={index} text={text} theme={theme} />

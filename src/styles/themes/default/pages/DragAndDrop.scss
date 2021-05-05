@@ -1,5 +1,9 @@
+.list{
+    @include breakpoint-down(small){
+        background-size: 575% !important;
+    }
+}
 .draggable{
-   
     .header{
         margin-bottom: 25px;
     }
@@ -220,5 +224,5 @@
     }
     &.history{
        @include HistoryDragAndDrop();
-    }
+    }    
 }
