@@ -6,6 +6,7 @@
     z-index:10;
     width: 80%;
     margin: 0px auto;
+    @include createFlex(row,center,center,wrap);
     @include breakpoint-down(medium){
         width: 100%;
     }
@@ -23,7 +24,7 @@
         &:hover{
             @include btn-transition(15px);
         }
-        @include createFlex(column,space-around,flex-start);
+        @include createFlex(column,space-around,flex-start,null);
         @include breakpoint-down(medium){
             width: 135px;
             margin: 0px 0px;
@@ -37,7 +38,7 @@
             width: 130px;
             animation: bounce-sm 1.2s ease-in-out 1.2s forwards;
         }
-        @media (max-width: 320px){
+        @media (max-device-width: 320px){
             margin:5px;
             animation: fadeIn 1.2s ease-in-out 1.2s forwards;
         } 

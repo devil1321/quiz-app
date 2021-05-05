@@ -9,6 +9,7 @@ export const DataContext = createContext({
     dragCheck:null,
     correct:0,
     isCheck:false,
+    isReset:false,
     history:[],
     answers:'',
     isPlay:false,
@@ -23,6 +24,8 @@ export const DataContext = createContext({
     reload:0,
     isLoad:false,
     listIndex:0,
+    movesLeft:10,
+    setMovesLeft:()=>{},
     setScss:()=>{},
     questionIn:()=>{},
     setListIndex:()=>{},
@@ -46,6 +49,7 @@ export const DataContext = createContext({
     prev:()=>{},
     setAnswers:()=>{},
     setHistory:()=>{},
+    setIsReset:()=>{},
     setIsCheck:()=>{},
     setList:()=>{},
     setDragCheck:()=>{},
@@ -68,7 +72,8 @@ export const DataProvider = ({children}) => {
     const [correct,setCorrect ] = useState(null)
     const [correctNr,setCorrectNr ] = useState(0)
     const [tries,setTries] = useState(0)
-    
+    const [movesLeft,setMovesLeft] = useState(10)
+
     const [locationHistory,setLocationHistory] = useState([])
     const [history,setHistory ] = useState([])
 
@@ -78,6 +83,7 @@ export const DataProvider = ({children}) => {
     const [reload,setReload] = useState(0)
 
 
+    const [isReset,setIsReset] = useState(false)
     const [isCheck,setIsCheck] = useState(false)
     const [isBack,setIsBack] = useState(false)
     const [isPlay,setIsPlay] = useState(false)
@@ -149,10 +155,12 @@ export const DataProvider = ({children}) => {
     },[location.pathname,index,themeURL,question,answers,correct])
 
     const nextQuestion = (data,path,theme) =>{     
+       
         setReload(0)
         setTimeout(()=>{
             setIsLoad(false)
-        },1000)
+            setMovesLeft(10)
+        },1200)
         setTimeout(()=>{
             if(index < data.length -1){
                 setIndex(index+1)
@@ -172,12 +180,17 @@ export const DataProvider = ({children}) => {
 
 
     }
-    const setQuestionsDragAndCheck = (data,setQuestion,setAnswers,setCorrect,index) =>{ 
+    const setQuestionsDragAndCheck = (data,setQuestion,setAnswers,setCorrect,index,theme) =>{ 
         if(index !== -1 && data !== null){
-            setQuestion(data[index].question)
-            setAnswers(data[index].answers)
-            setCorrect(data[index].correct)
-            setIsLoad(true)
+            if(index >= 0){   
+                setQuestion(data[index].question)
+                setAnswers(data[index].answers)
+                setCorrect(data[index].correct)
+                setIsLoad(true)
+            }else{
+                setIsLoad(false)
+                browserHistory.push(`/${theme}/home`)
+            }
         }
     }
     const comesIn = () =>{
@@ -224,6 +237,7 @@ export const DataProvider = ({children}) => {
             items.splice(result.destination.index, 0, reorderedItem);
             setAnswers(items)
             setTries(tries+1)
+            setMovesLeft(movesLeft - 1)
             if(path == `/${theme}/questions` || path == `/${theme}/drag-and-drop`){
                 return result;
             }else{
@@ -305,11 +319,12 @@ export const DataProvider = ({children}) => {
         setIsBack(false)
         setAnswers([])
         setQuestion(null)
+        setMovesLeft(10)
     }
     const setScss = (theme,path) =>{
         if(path === `/${theme}/drag-and-drop` || path === `/${theme}/list-drag-and-drop`){
             let draggableBtns = document.querySelectorAll('.draggable__btn')
-            if(theme === 'automotive' || theme === 'history'){
+            if(theme === 'history'){
                 draggableBtns.forEach(btn=>btn.style.margin = '0px 5px 5px 5px')
                 console.log('changed')
             }
@@ -330,6 +345,7 @@ export const DataProvider = ({children}) => {
             dragCheck,
             correct,
             isCheck,
+            isReset,
             history,
             answers,
             isPlay,
@@ -344,6 +360,8 @@ export const DataProvider = ({children}) => {
             isLoad,
             reload,
             listIndex,
+            movesLeft,
+            setMovesLeft,
             setScss,
             questionIn,
             setListIndex,
@@ -362,6 +380,7 @@ export const DataProvider = ({children}) => {
             setIsPlay,
             setAnswers,
             setHistory,
+            setIsReset,
             setIsCheck,
             setList,
             setDragCheck,

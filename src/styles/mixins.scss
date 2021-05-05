@@ -3,23 +3,23 @@ $breakpoints-up:("medium":"40em", "large":"64.5em", "xlarge":"87.5em");
 // 639px 1023px 1399px
 $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","medium":"64em", "large":"85.4375em");
 @mixin breakpoint-up($size) {
-    @media(min-width: map-get($breakpoints-up, $size)) {
+    @media(min-device-width: map-get($breakpoints-up, $size)) {
         @content;
     }
 }
 
 @mixin breakpoint-down($size) {
-    @media(max-width: map-get($breakpoints-down, $size)) {
+    @media(max-device-width: map-get($breakpoints-down, $size)) {
         @content;
     }
 }
 @mixin breakpoint-down-l($size) {
-    @media(max-width: map-get($breakpoints-down, $size)) and (orientation:landscape) {
+    @media(max-device-width: map-get($breakpoints-down, $size)) and (orientation:landscape) {
         @content;
     }
 }
 @mixin breakpoint-up-l($size) {
-    @media(min-width: map-get($breakpoints-down, $size)) and (orientation:landscape) {
+    @media(min-device-width: map-get($breakpoints-down, $size)) and (orientation:landscape) {
         @content;
     }
 }
@@ -49,7 +49,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
 }
-@mixin createFlex($direction,$jc,$ai){
+@mixin createFlex($direction,$jc,$ai,$fw){
     display:flex;
     @if($direction){
         flex-direction: $direction;
@@ -59,6 +59,9 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
     }
     @if($ai){
         align-items: $ai;
+    }
+    @if($fw){
+        flex-wrap: $fw;
     }
 }
 @mixin background-cover(){
@@ -174,9 +177,9 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 @mixin HistoryBackground(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/background_play_and_check/background_main_light.jpg');
-        -webkit-transition: background-image 0.2s ease-in-out;
-        transition: background-image 0.2s ease-in-out;
-        animation: historyMain 8s ease-in-out infinite;
+        -webkit-transition: background-image 14s ease-in-out;
+        transition: background-image 14s ease-in-out;
+        animation: historyMain 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
     }
@@ -246,9 +249,9 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 @mixin HistoryQuestions(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/bacground_questions/background_first.jpg');
-        -webkit-transition: background-image 0.2s ease-in-out;
-        transition: background-image 0.2s ease-in-out;
-        animation: historyQuestions 8s ease-in-out infinite;
+        -webkit-transition: background-image 14s ease-in-out;
+        transition: background-image 14s ease-in-out;
+        animation: historyQuestions 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
     }
@@ -324,9 +327,9 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 @mixin HistoryDragAndDrop(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/background_drag/background_drag_one.jpg');
-        -webkit-transition: background-image 0.2s ease-in-out;
-        transition: background-image 0.2s ease-in-out;
-        animation: historyDragAndDrop 8s ease-in-out infinite;
+        -webkit-transition: background-image 14s ease-in-out;
+        transition: background-image 14s ease-in-out;
+        animation: historyDragAndDrop 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
     }

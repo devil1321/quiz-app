@@ -16,6 +16,7 @@
     }
     &__inner{
         margin-bottom: $space-md-lg;
+        @include createFlex(row,space-between,center,null);
         @include breakpoint-down(medium){
             margin-bottom:$space-lg;
         }
@@ -89,7 +90,7 @@
     &__count{
         font-size: pxToRem(16);
         position: absolute;
-        right:100px;
+        right:11%;
         top:-12px;
         width: 65px;
         height: 65px;
@@ -98,12 +99,12 @@
         p{
             margin-top: 2px
         }
-        @include createFlex(row,center,center);
+        @include createFlex(row,center,center,null);
         .max{
             color: $purple;
         }
         @include breakpoint-up(xlarge){
-            right:120px;
+            right:15%;
         }
         @include breakpoint-down(medium){
             width: 85px;

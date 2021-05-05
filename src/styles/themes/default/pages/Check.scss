@@ -126,20 +126,20 @@
     &__category{
         height: 80%;
         position: absolute;
-        right: 140px;
+        right: 11%;
         top:50%;
         width:150px;
         z-index: 10;
         text-align: left;
         transform: translateY(-35%);
-        @media (min-width:1366px) and (min-height:1024px) and (orientation:landscape){
+        @media (min-device-width:1366px) and (min-device-height:1024px) and (orientation:landscape){
             transform: translateY(-45%);
         }
         @include breakpoint-down(medium){
             transform: translateY(-52%);
             right: 7%;
         }
-        @media (max-width:768px) and (max-height:1024px){
+        @media (max-device-width:768px) and (max-device-height:1024px){
             right: 5%;
         }
         @include breakpoint-down(small){
@@ -160,7 +160,7 @@
             top:20px;
             transform: translateY(0%);
         }
-        @media (max-width:320px){
+        @media (max-device-width:320px){
             height: 70px;
         }
         p{
@@ -186,13 +186,13 @@
                 display: flex;
                 flex-direction: row;
             }
-            @media (width:411px){
+            @media (max-device-width:411px){
                 margin-top: 0px;
             }
-            @media (max-width:360px){
+            @media (max-device-width:360px){
                 margin-top: -20px;
             }
-            @media (max-width:320px){
+            @media (max-device-width:320px){
                 margin-top: 30px;
             }
             &__item{
@@ -204,16 +204,13 @@
                     width: 80px;
                     height:80px;
                     padding: 10px;
+                    p{font-size: pxToRem(7) !important};
                 }
-                @media (max-width:376px){
+                @media (max-device-width:376px){
                     width: 70px;
                     height:70px;
                 }
-                @media (max-width:360px){
-                    width: 70px;
-                    height:70px;
-                }
-                @media (max-width:320px){
+                @media (max-device-width:320px){
                     width: 100px;
                     height:100px;
                     margin: 20px 5px;

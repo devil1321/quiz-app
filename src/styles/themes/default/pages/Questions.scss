@@ -37,6 +37,7 @@
 
     &__answers{
         @include btnGroup();
+        @include createFlex(row,flex-start,null,wrap);
         @include breakpoint-down(small){
             justify-content:center;
         }

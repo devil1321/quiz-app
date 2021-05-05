@@ -8,10 +8,11 @@ import Question from '../../components/Question'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 import HistoryQuestion from '../../components/AnimatedBackgrounds/HistoryQuestions'
 const ListDragAndDrop = ({theme}) => {
-    const {setThemeURL,reload,setReload,setScss,questionIn,setIndex,isLoad,list,listIndex,locationHistory,setLocationHistory,isBack,correctDrop,question,handleOnDragEnd,setQuestion,index,isCheck,answers,correct,setCorrectDrop,history,setAnswers,setCorrect,setIsPlay,setQuestionsDragAndCheck} = useContext(DataContext)
+    const {setThemeURL,reload,setReload,setScss,questionIn,setIndex,movesLeft,isLoad,list,listIndex,locationHistory,setLocationHistory,isBack,correctDrop,question,handleOnDragEnd,setQuestion,index,isCheck,answers,correct,setCorrectDrop,history,setAnswers,setCorrect,setIsPlay,setQuestionsDragAndCheck} = useContext(DataContext)
     const  browserHistory = useHistory()
     const [isCorrect,setIsCorrect] = useState(false)
     const [isFalse,setIsFalse] = useState(false)
+    
     let location = useLocation()
     let path = location.pathname
     useEffect(()=>{
@@ -20,9 +21,9 @@ const ListDragAndDrop = ({theme}) => {
         setIsCorrect(false)
         
         if(isLoad !== true && !isBack && !isCheck && listIndex < 2){          
-            setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex)
+            setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex,theme)
         }else if(isCheck && isBack && listIndex < 2){
-            setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex)
+            setQuestionsDragAndCheck(list,setQuestion,setAnswers,setCorrect,listIndex,theme)
             questionIn()
         }
         
@@ -58,6 +59,7 @@ const ListDragAndDrop = ({theme}) => {
         }
         setThemeURL(theme)
         if(reload < 2) setReload(reload + 1)
+        
     },[index,listIndex,reload,isCheck,isCorrect,isFalse,question,isBack])
     // do contextu
     return (
@@ -66,14 +68,14 @@ const ListDragAndDrop = ({theme}) => {
             <Question question={question} nr={`${listIndex+1}. `}/>
             <div className="draggable__action">
                 <DragDropContext onDragEnd={(e)=>{handleOnDragEnd(e,list,path,theme)}}>
-                    <h2 className="draggable__subtitle">You Have 10 Moves</h2>
+                    <h2 className="draggable__subtitle">You Have {movesLeft} Moves</h2>
                     {isCorrect ? <h2 className="draggable__answer">Correct <div className="draggable__correct-text"></div></h2> : null}
                     {isFalse? <h2 className="draggable__answer">Wrong<div className="draggable__wrong-text"></div></h2> : null}
-                    <div className="draggable__answers d-flex j-c-s f-w">
+                    <div className="draggable__answers">
                         {answers.map((text,index)=> 
                             <Droppable  key={text}  droppableId={`draggable__row-${index}`} direction="horizontal" >
                                 {(provided)=>(
-                                <div className={`draggable__row-${index} d-flex j-c-s`}  {...provided.draggableProps} ref={provided.innerRef}>
+                                <div className={`draggable__row-${index} draggable--row`}  {...provided.draggableProps} ref={provided.innerRef}>
                                     <DragAnswer correct={correct} index={index} text={text} theme={theme} />
                                     {provided.placeholder}
                                 </div>

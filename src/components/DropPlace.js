@@ -23,7 +23,7 @@ const DragPlace = ({correct,theme}) => {
        if(reload < 2) setReload(reload + 1)
     },[index,reload,answers])   
     return (
-        <div className="drop d-flex j-c-c a-i-c">
+        <div className="drop">
             <Droppable   droppableId={`drop__place`} direction="horizontal" >
             {provided=>(
 

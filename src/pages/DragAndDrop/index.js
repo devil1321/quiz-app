@@ -8,17 +8,16 @@ import Question from '../../components/Question'
 import { DragDropContext, Droppable } from 'react-beautiful-dnd'
 import HistoryQuestion from '../../components/AnimatedBackgrounds/HistoryQuestions'
 const DragAndDrop = ({theme}) => {
-    const {setThemeURL,reload,setReload,setIndex,setScss,isLoad,questionIn,locationHistory,setLocationHistory,isBack,correctDrop,question,handleOnDragEnd,setQuestion,index,dragCheck,isCheck,answers,correct,setAnswers,setCorrect,setIsPlay,setQuestionsDragAndCheck} = useContext(DataContext)
+    const {setThemeURL,reload,setReload,setIndex,setScss,isLoad,setIsLoad,questionIn,locationHistory,setLocationHistory,isBack,correctDrop,question,handleOnDragEnd,setQuestion,index,dragCheck,isCheck,answers,correct,setAnswers,setCorrect,setIsPlay,setQuestionsDragAndCheck} = useContext(DataContext)
     const  browserHistory = useHistory()
     const [isSet,setIsSet] = useState(false)
     let location = useLocation()
     let path = location.pathname
     useEffect(()=>{
-        setScss(theme,path)
         if(isLoad !== true && !isBack && !isCheck){
-            setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index)
+            setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index,theme)
         }else if(isCheck && isBack){
-            setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index)
+            setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index,theme)
             questionIn()
         }
         let tempLocation = [...locationHistory]
@@ -44,7 +43,11 @@ const DragAndDrop = ({theme}) => {
         }
         setThemeURL(theme)
         if(reload < 2) setReload(reload + 1)
+       
+        
     },[index,reload,isCheck,isBack])
+    
+  
     // do contextu
     return (
         <div className={`draggable ${theme}`} >
@@ -53,11 +56,11 @@ const DragAndDrop = ({theme}) => {
             <div className="draggable__action">
                 <DragDropContext  onDragEnd={(e)=>{handleOnDragEnd(e,dragCheck,path,theme)}}>
                     <DropPlace  correct={correct} theme={theme} />
-                    <div className="draggable__answers d-flex j-c-s f-w">
+                    <div className="draggable__answers">
                         {answers.map((text,index)=> 
                             <Droppable key={text}  droppableId={`draggable__row-${index}`} direction="horizontal" >
                                 {(provided)=>(
-                                <div className={`draggable__row-${index} d-flex j-c-s`}  {...provided.draggableProps} ref={provided.innerRef}>
+                                <div className={`draggable__row-${index} draggable--row`}  {...provided.draggableProps} ref={provided.innerRef}>
                                     <DragAnswer index={index} text={text} theme={theme} />
                                     {provided.placeholder}
                                 </div>

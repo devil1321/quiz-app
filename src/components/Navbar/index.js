@@ -4,7 +4,7 @@ import NavbarItem from './NavbarItem'
 
 const Navbar = ({theme}) => {
     return (
-        <div className="nav d-flex j-c-c a-i-c f-w">
+        <div className="nav">
             <Link to={`/technology/play`}>
                <NavbarItem theme={theme} icon="/assets/icons/technologia_ikona_.svg" text="TECHNOLOGIA" nr="tech"/>
             </Link>
@@ -15,7 +15,7 @@ const Navbar = ({theme}) => {
                <NavbarItem theme={theme} icon="/assets/icons/motoryzacja_ikona.svg" text="MOTORYZACJA" nr="auto"/>
             </Link>  
             <Link to={`/code/play`}>
-                <NavbarItem theme={theme} icon="/assets/icons/programowanie_ikona.svg" text="PROGRAMOWANIE" nr="prog"/>
+                <NavbarItem theme={theme} icon="/assets/icons/programowanie_ikona.svg" text="CODE" nr="prog"/>
             </Link>
             <Link to={`/history/play`}>
                <NavbarItem theme={theme} icon="/assets/icons/historia_ikona.svg" text="HISTORIA" nr="his"/>

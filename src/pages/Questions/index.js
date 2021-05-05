@@ -14,7 +14,7 @@ const Questions = ({theme}) => {
     const [isSet,setIsSet] = useState(false)
     useEffect(()=>{
         setScss(theme,path)
-        setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index)
+        setQuestionsDragAndCheck(dragCheck,setQuestion,setAnswers,setCorrect,index,theme)
         comesIn()
         let tempLocation = [...locationHistory]
         tempLocation[index] = path
@@ -38,7 +38,7 @@ const Questions = ({theme}) => {
         <div className={`questions ${theme}`}>
             <Header theme={theme} subtitle="SELECT THE CORRECT ANSWER" current={index+1} max={10}/>
             <Question question={question} />
-            <div className="questions__answers d-flex j-c-s f-w">
+            <div className="questions__answers">
                 {answers.map((text,index)=>{
                         return <Button key={index}  correct={correct} nextQuestion = {nextQuestion} text={text} theme={theme} textLeft/>
                     })

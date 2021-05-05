@@ -1,7 +1,4 @@
-.draggable__btn.dropped{
-    margin-left: 0px;
-    margin-top: 0px;
-}
+
 .drop{
     width: 60%;
     margin:10px auto 20px;
@@ -9,6 +6,7 @@
     z-index:10;
     left: -20px;
     top:0px;
+    @include createFlex(row,center,center,null);
     @include breakpoint-down(small){
         justify-content: center;
         left: 0px;
@@ -52,5 +50,24 @@
     }
     &__wrong{
         background-image: url('../../../../assets/code/wrong.png');
+    }
+}
+.draggable__btn.dropped{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.draggable__btn.dropped{
+    margin:0px -2px 0px 0px !important;
+    @include breakpoint-down(medium){
+        margin:0px -3px 0px 0px !important;
+    }
+    @include breakpoint-down(small){
+        width: 124px !important;
+        margin:0px -2px 0px 0px !important;
+    }
+    @media (max-device-width:320px){
+        width: 123px !important;
+        height: 99px !important;
+        margin:0px -1px 0px 0px !important;
     }
 }

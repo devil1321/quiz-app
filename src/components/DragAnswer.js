@@ -25,7 +25,7 @@ const DragAnswer = ({index,text,theme}) => {
                 }
             },2000)
         }
-
+       
     },[load,index])
     return (
         <Draggable  draggableId={text.toString()} key={index} index={index}>

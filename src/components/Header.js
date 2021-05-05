@@ -35,7 +35,7 @@ const Header = ({subtitle,theme,current,max}) => {
             </Link> 
           : null }
           <div className="header__inner-wrapper">
-            <div className={`header__inner d-flex j-c-sb a-i-c`}>
+            <div className={`header__inner`}>
                 <img className="header__btn-back"  onClick={()=>{prev(isCheck,isPlay,theme,path)}} style={!isSmall ? {visibility:"hidden"} : {visibility:"visible",animation:load}} src="/assets/icons/cofnij_strzalka.svg" alt="btn-back" />
                 <img className="header__logo" src="/assets/icons/logo.png" alt="logo"/>
                 <div className="header__icons-group">
