@@ -70,7 +70,7 @@ const ListDragAndDrop = ({theme}) => {
                             <Droppable  key={text}  droppableId={`draggable__row-${index}`} direction={"horizontal"} >
                                 {(provided)=>(
                                 <div className={`draggable__row-${index} draggable--row`}  {...provided.draggableProps} ref={provided.innerRef}>
-                                    <DragAnswer correct={correct} index={index} text={text} theme={theme} />
+                                    <DragAnswer correct={correct} index={index} text={text} theme={theme} list={"list"} />
                                     {provided.placeholder}
                                 </div>
                             )}</Droppable>

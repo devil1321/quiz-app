@@ -1,5 +1,3 @@
-
-
 .draggable__btn{
     cursor: grab;
     width: 200px;
@@ -13,7 +11,7 @@
     opacity: 0;
     @include breakpoint-down(small){
         width: 130px;
-        margin: 5px 15px !important;
+        margin: 5px 15px;
     }
     @media (max-width:320px){
         width: 110px;
@@ -76,5 +74,10 @@
                 background-image: url('../../../../assets/history/button_hover.png');
             }
         }
+    }
+}
+.list{
+    @include breakpoint-down(small){
+        margin:0px 15px !important;
     }
 }

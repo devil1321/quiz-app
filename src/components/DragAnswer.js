@@ -2,7 +2,7 @@ import React,{useContext,useEffect,useState} from 'react'
 import { useLocation } from 'react-router-dom'
 import {DataContext} from '../api/context'
 import { Draggable } from 'react-beautiful-dnd'
-const DragAnswer = ({index,text,theme}) => {
+const DragAnswer = ({index,text,theme,list}) => {
     const {comesIn,isBack,answers} = useContext(DataContext)
     const [load,setLoad] = useState(false)
     const [size,setSize] = useState(window.innerWidth)
@@ -17,7 +17,6 @@ const DragAnswer = ({index,text,theme}) => {
                     btn.style.position = 'relative'
                     btn.style.bottom = '0px'
                     btn.style.left = '-5%'
-                    btn.style.margin = '0px 15px !important'
                     btn.style.width = '250px'
                 })
             }else if(size >= 768){
@@ -54,7 +53,7 @@ const DragAnswer = ({index,text,theme}) => {
     return (
         <Draggable  draggableId={text.toString()} key={index} index={index}>
         {(provided)=>(
-            <div className="draggable__btn" ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+            <div className={`draggable__btn ${list}`} istref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
                 <div className={`draggable__btn-${theme}`}>
                     <p>{text}</p>
                 </div>
