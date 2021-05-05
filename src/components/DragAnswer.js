@@ -53,7 +53,7 @@ const DragAnswer = ({index,text,theme,list}) => {
     return (
         <Draggable  draggableId={text.toString()} key={index} index={index}>
         {(provided)=>(
-            <div className={`draggable__btn ${list}`} istref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+            <div className={`draggable__btn ${list}`} ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
                 <div className={`draggable__btn-${theme}`}>
                     <p>{text}</p>
                 </div>

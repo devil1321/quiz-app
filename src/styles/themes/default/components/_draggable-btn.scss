@@ -78,6 +78,6 @@
 }
 .list{
     @include breakpoint-down(small){
-        margin:0px 15px !important;
+        margin:0px !important;
     }
 }
