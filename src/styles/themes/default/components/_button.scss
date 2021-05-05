@@ -15,6 +15,9 @@
         left: 0px;
         bottom:0px;
     }
+    &__flex{
+        @include createFlex(row,space-around,center,null)
+    } 
     &__technology{
         @include buttonGlobal();
         background-image: url('../../../../assets/technology/button_play.png');

@@ -11,7 +11,17 @@
     }
     &.technology{
         background-image: url('../../../../assets/technology/background_play_normal.jpg');
+        
         @include background-cover;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
             background-size: 200%;
         }
@@ -31,6 +41,15 @@
     &.culture{
         background-image: url('../../../../assets/culture/background_normal_play_and_drag.jpg');
         @include background-cover;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
             background-size: 150%;
             background-position: 100% 0%;
@@ -49,6 +68,15 @@
     &.automotive{
         background-image: url('../../../../assets/automotive/background_play_normal.jpg');
         @include background-cover;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
             background-size: 150%;
         }
@@ -74,6 +102,15 @@
     &.code{
         background-image: url('../../../../assets/code/background_play_normal.jpg');
         @include background-cover;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
         @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
             background-size: 150%;
             background-position: 100% 0px;

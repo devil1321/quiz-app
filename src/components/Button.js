@@ -74,7 +74,7 @@ const Button = ({theme,play,correct,textLeft,text,nextQuestion,replay}) => {
         }}>
             <div  
                 style={textLeft ? {justifyContent:"flex-start",paddingLeft:"20px"} : null} 
-                className={`button__${theme} ${isCorrect || isFalse ? 'active' : null} d-flex j-c-sa a-i-c`}>
+                className={`button__${theme} ${isCorrect || isFalse ? 'active' : null} button__flex d-flex j-c-sa a-i-c`}>
                 <p className="button__answer">{text}</p>
                 {play ? <div className={`button__${theme}-icon`}></div> : null}
                 {isCorrect ? <div className={`button__${theme}-icon-correct`}></div> : null}

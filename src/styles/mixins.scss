@@ -1,13 +1,13 @@
 // 640px 1024px 1400px
 $breakpoints-up:("medium":"40em", "large":"64.5em", "xlarge":"87.5em");
 // 639px 1023px 1399px
-$breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","medium":"64em", "large":"85.4375em");
+$breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","medium":"64em", "large":"85,375em");
+
 @mixin breakpoint-up($size) {
     @media(min-device-width: map-get($breakpoints-up, $size)) {
         @content;
     }
 }
-
 @mixin breakpoint-down($size) {
     @media(max-device-width: map-get($breakpoints-down, $size)) {
         @content;
@@ -27,27 +27,9 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 @function pxToRem($pxsize,$rembase:16){
     @return ($pxsize / $rembase) + rem;
 }
-
-
-@mixin createCol(){
-    @each $size in $sizes{
-        $index:index($sizes, $size);
-        .col-#{$index} {
-            width:$size;
-        }
-    }
-}
 @mixin set-container{
     min-height: 100vh;
     padding:$pad-sm-md;
-}
-@mixin createOffset(){
-    @each $offset in $offsets{
-        $index:index($offset, $offsets);
-        .offset-#{$index} {
-            width:$offset;
-        }
-    }
 }
 @mixin createFlex($direction,$jc,$ai,$fw){
     display:flex;
@@ -69,7 +51,6 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
     background-repeat: no-repeat;
     background-position: center top;
 }
-
 @mixin subitle-bg(){
     background-size: 80% 100%;
     background-repeat: no-repeat;
@@ -124,7 +105,6 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         transform:scale(1.05);
     }
 }
-
 @mixin buttonGlobal(){
     @include setAnswer();
     background-size: 100% 100%;
@@ -173,7 +153,6 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         border:1px solid $lightBrown;
     }
 }
-
 @mixin HistoryBackground(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/background_play_and_check/background_main_light.jpg');
@@ -182,6 +161,15 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         animation: historyMain 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
     }
     @include breakpoint-down(medium){
         background-image: url('../assets/history/background_normal_play.jpg');
@@ -245,7 +233,6 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
 }
-
 @mixin HistoryQuestions(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/bacground_questions/background_first.jpg');
@@ -254,6 +241,15 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         animation: historyQuestions 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
     }
     @include breakpoint-down(medium){
         background-image: url('../assets/history/background_normal_questions.jpg');
@@ -323,7 +319,6 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
 }
-
 @mixin HistoryDragAndDrop(){
     @include breakpoint-up(large){
         background-image: url('../assets/history/background_drag/background_drag_one.jpg');
@@ -332,6 +327,15 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         animation: historyDragAndDrop 14s ease-in-out infinite;
         background-size: 110% 110%;
         background-position: center center;
+        @media (max-width:1365px){
+            background-size: 120%;
+        }
+        @media (max-width:937px){
+            background-size: 150%;
+        }
+        @media (max-width:743px){
+            background-size: 300%;
+        }
     }
     @include breakpoint-down(medium){
         background-image: url('../assets/history/background_drag.jpg');
