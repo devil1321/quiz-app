@@ -2,17 +2,15 @@ import React,{useState,useContext,useEffect} from 'react'
 import { useLocation ,useHistory} from 'react-router-dom'
 import {DataContext} from '../api/context'
 const Button = ({theme,play,correct,textLeft,text,nextQuestion,replay}) => {
-    const {restart,setCorrectNr,correctNr,dragCheck,history,setHistory,index,isCheck,isBack} = useContext(DataContext) 
+    const {restart,setCorrectNr,isClicked,correctNr,dragCheck,history,setHistory,index,isCheck,isBack} = useContext(DataContext) 
     const [isCorrect,setIsCorrect] = useState(false)
     const [isFalse,setIsFalse] = useState(false)
     const [reload,setReload] = useState(0)
     const [historyIndex,setHistoryIndex] = useState(0)
-    const [isClicked,setIsClicked] = useState(false)
     let location = useLocation();
     let path = location.pathname
     let browserHistory = useHistory()
     useEffect(()=>{
-        setIsClicked(false)
         if(isCheck == true && path === `/${theme}/questions`){   
             setIsCorrect(false)
             setIsFalse(false)
@@ -32,10 +30,9 @@ const Button = ({theme,play,correct,textLeft,text,nextQuestion,replay}) => {
         }
     },[location,index,isCorrect,historyIndex,isFalse,reload,isClicked])
     return (
-        <div className="button"
+        <div className="button" style={isClicked ? {pointerEvents:'none'} : {pointerEvents:'auto'}}
         onClick={(e)=>{
-            if(isClicked === false){
-            setIsClicked(true)
+            console.log(isClicked)
             if(path === `/${theme}/questions`){
                 if(isCheck == false){
                     if(correct === text){
@@ -66,11 +63,12 @@ const Button = ({theme,play,correct,textLeft,text,nextQuestion,replay}) => {
                     browserHistory.push(`/${theme}/list-drag-and-drop`)
                 }
             }
+
             setTimeout(()=>{
                 setIsCorrect(false)
                 setIsFalse(false)
             },2300)
-        }
+        
         }}>
             <div  
                 style={textLeft ? {justifyContent:"flex-start",paddingLeft:"20px"} : null} 

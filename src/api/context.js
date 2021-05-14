@@ -25,6 +25,8 @@ export const DataContext = createContext({
     isLoad:false,
     listIndex:0,
     movesLeft:10,
+    isClicked:false,
+    setIsClicked:()=>{},
     setMovesLeft:()=>{},
     setScss:()=>{},
     questionIn:()=>{},
@@ -79,6 +81,7 @@ export const DataProvider = ({children}) => {
 
     const [isList,setIsList] = useState(false)
 
+    const [isClicked,setIsClicked] = useState(false)
     const[isLoad,setIsLoad] = useState(false)
     const [reload,setReload] = useState(0)
 
@@ -155,7 +158,7 @@ export const DataProvider = ({children}) => {
     },[location.pathname,index,themeURL,question,answers,correct])
 
     const nextQuestion = (data,path,theme) =>{     
-       
+        setIsClicked(true)
         setReload(0)
         setTimeout(()=>{
             setIsLoad(false)
@@ -164,6 +167,7 @@ export const DataProvider = ({children}) => {
         setTimeout(()=>{
             if(index < data.length -1){
                 setIndex(index+1)
+                setIsClicked(false)
             }
             if(index === data.length -1){
                 setIsCheck(true)
@@ -361,6 +365,8 @@ export const DataProvider = ({children}) => {
             reload,
             listIndex,
             movesLeft,
+            isClicked,
+            setIsClicked,
             setMovesLeft,
             setScss,
             questionIn,
