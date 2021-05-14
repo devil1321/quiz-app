@@ -61,38 +61,38 @@
             }
         }
         &.technology{
-            background-image: url('../../../../assets/technology/category.png');
+            background-image: url('../../../../assets/technology/category.webp');
             @include background-cover();
             &:hover{
-                background-image: url('../../../../assets/technology/category_hover.png');
+                background-image: url('../../../../assets/technology/category_hover.webp');
             }
         }
         &.culture{
-            background-image: url('../../../../assets/culture/category.png');
+            background-image: url('../../../../assets/culture/category.webp');
             @include background-cover();
             &:hover{
-                background-image: url('../../../../assets/culture/category_hover.png');
+                background-image: url('../../../../assets/culture/category_hover.webp');
             }
         }
         &.automotive{
-            background-image: url('../../../../assets/automotive/category.png');
+            background-image: url('../../../../assets/automotive/category.webp');
             @include background-cover();
             &:hover{
-                background-image: url('../../../../assets/automotive/category_hover.png');
+                background-image: url('../../../../assets/automotive/category_hover.webp');
             }
         }
         &.code{
-            background-image: url('../../../../assets/code/nav_item_bg.png');
+            background-image: url('../../../../assets/code/nav_item_bg.webp');
             @include background-cover();
             &:hover{
-                background-image: url('../../../../assets/code/nav_item_bg_hover.png');
+                background-image: url('../../../../assets/code/nav_item_bg_hover.webp');
             }
         }
         &.history{
-            background-image: url('../../../../assets/history/category.png');
+            background-image: url('../../../../assets/history/category.webp');
             @include background-cover();
             &:hover{
-                background-image: url('../../../../assets/history/category_hover.png');
+                background-image: url('../../../../assets/history/category_hover.webp');
             }
         }
     }

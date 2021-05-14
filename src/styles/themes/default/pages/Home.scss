@@ -2,7 +2,7 @@
     @include set-container();
     background-size: 100%;
     &.technology{       
-        background-image: url('../../../../assets/technology/background_check_normal.jpg');
+        background-image: url('../../../../assets/technology/background_check_normal.webp');
         @media (max-width:1365px){
             background-size: 130%;
         }
@@ -28,7 +28,7 @@
         }
     }
     &.culture{
-        background-image: url('../../../../assets/culture/background_check_normal.jpg');
+        background-image: url('../../../../assets/culture/background_check_normal.webp');
         @media (max-width:1365px){
             background-size: 130%;
         }
@@ -52,7 +52,7 @@
         }
     }
     &.automotive{
-        background-image: url('../../../../assets/automotive/background_check.jpg');
+        background-image: url('../../../../assets/automotive/background_check.webp');
         background-size: cover;
         @media (max-width:1365px){
             background-size: 130%;
@@ -78,7 +78,7 @@
       
     }
     &.code{
-        background-image: url('../../../../assets/code/background_home_normal.jpg');
+        background-image: url('../../../../assets/code/background_home_normal.webp');
         @media (max-width:1365px){
             background-size: 130%;
         }

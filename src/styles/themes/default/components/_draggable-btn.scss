@@ -31,47 +31,47 @@
     }
     &-technology{
         @include draggableBtn();
-        background-image: url('../../../../assets/technology/button_drag.png');
+        background-image: url('../../../../assets/technology/button_drag.webp');
         @include breakpoint-up(large){
             &:hover{
-                background-image: url('../../../../assets/code/button_drag_hover.png');
+                background-image: url('../../../../assets/code/button_drag_hover.webp');
             }
         }
     }
     &-culture{
         @include draggableBtn();
-        background-image: url('../../../../assets/culture/button_drag.png');
+        background-image: url('../../../../assets/culture/button_drag.webp');
         @include breakpoint-up(large){
             &:hover{
-                background-image: url('../../../../assets/culture/button_drag_hover.png');
+                background-image: url('../../../../assets/culture/button_drag_hover.webp');
             }
         }
     }
     &-automotive{
         
         @include draggableBtn();
-        background-image: url('../../../../assets/automotive/buttom_drag.png');
+        background-image: url('../../../../assets/automotive/buttom_drag.webp');
         @include breakpoint-up(large){
             &:hover{
-                background-image: url('../../../../assets/automotive/buttom_drag_hover.png');
+                background-image: url('../../../../assets/automotive/buttom_drag_hover.webp');
             }
         }
     }
     &-code{        
         @include draggableBtn();
-        background-image: url('../../../../assets/code/button_drag.png');
+        background-image: url('../../../../assets/code/button_drag.webp');
         @include breakpoint-up(large){
             &:hover{
-                background-image: url('../../../../assets/code/button_drag_hover.png');
+                background-image: url('../../../../assets/code/button_drag_hover.webp');
             }
         }
     }
     &-history{       
         @include draggableBtn();
-        background-image: url('../../../../assets/history/button_drag.png');
+        background-image: url('../../../../assets/history/button_drag.webp');
         @include breakpoint-up(large){
             &:hover{
-                background-image: url('../../../../assets/history/button_hover.png');
+                background-image: url('../../../../assets/history/button_hover.webp');
             }
         }
     }

@@ -67,23 +67,23 @@
             animation: fadeIn 1s ease-in-out 0.5s forwards;
         }
         &.technology{ 
-            background-image: url('../../../../assets/technology/podcien.png');
+            background-image: url('../../../../assets/technology/podcien.webp');
             @include subitle-bg;
          }
          &.culture{ 
-            background-image: url('../../../../assets/culture/podcien.png');
+            background-image: url('../../../../assets/culture/podcien.webp');
             @include subitle-bg;
          }
          &.automotive{ 
-            background-image: url('../../../../assets/automotive/podcien.png');
+            background-image: url('../../../../assets/automotive/podcien.webp');
             @include subitle-bg;
          }
         &.code{ 
-           background-image: url('../../../../assets/code/podcien.png');
+           background-image: url('../../../../assets/code/podcien.webp');
            @include subitle-bg;
         }
         &.history{ 
-            background-image: url('../../../../assets/history/podcien.png');
+            background-image: url('../../../../assets/history/podcien.webp');
             @include subitle-bg;
          }
     }
@@ -124,19 +124,19 @@
             right:15px;
         }
         &.technology{
-            background-image: url('../../../../assets/technology/question_count.png');
+            background-image: url('../../../../assets/technology/question_count.webp');
         }
         &.automotive{
-            background-image: url('../../../../assets/automotive/question_count.png');
+            background-image: url('../../../../assets/automotive/question_count.webp');
         }
         &.culture{
-            background-image: url('../../../../assets/culture/question_count.png');
+            background-image: url('../../../../assets/culture/question_count.webp');
         }
         &.code{
-            background-image: url('../../../../assets/code/question_count.png');
+            background-image: url('../../../../assets/code/question_count.webp');
         }
         &.history{
-            background-image: url('../../../../assets/history/question_count.png');
+            background-image: url('../../../../assets/history/question_count.webp');
         }
     }
 }

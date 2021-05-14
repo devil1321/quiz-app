@@ -46,10 +46,10 @@
         @include background-cover;
     }
     &__correct{
-        background-image: url('../../../../assets/code/correct.png');
+        background-image: url('../../../../assets/code/correct.webp');
     }
     &__wrong{
-        background-image: url('../../../../assets/code/wrong.png');
+        background-image: url('../../../../assets/code/wrong.webp');
     }
 }
 .draggable__btn.dropped{

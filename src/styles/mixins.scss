@@ -155,7 +155,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 }
 @mixin HistoryBackground(){
     @include breakpoint-up(large){
-        background-image: url('../assets/history/background_play_and_check/background_main_light.jpg');
+        background-image: url('../assets/history/background_play_and_check/background_main_light.webp');
         -webkit-transition: background-image 14s ease-in-out;
         transition: background-image 14s ease-in-out;
         animation: historyMain 14s ease-in-out infinite;
@@ -172,7 +172,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
     @include breakpoint-down(medium){
-        background-image: url('../assets/history/background_normal_play.jpg');
+        background-image: url('../assets/history/background_normal_play.webp');
         background-size: cover;
         background-position-x: 70%;
     }
@@ -186,7 +186,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 100vw;
             height: 100vh;
             opacity: 0.9;
-            background-image: url('../assets/particles/history/circles.png');
+            background-image: url('../assets/particles/history/circles.webp');
             background-repeat: no-repeat;
             animation: historyCircle 5s ease-in-out forwards;
         }
@@ -196,7 +196,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             top:0;
             width: 100vw;
             height: 100vh;
-            background-image: url('../assets/history/background_play_and_check/background_cloud_center.png');
+            background-image: url('../assets/history/background_play_and_check/background_cloud_center.webp');
             background-size: cover;
         }
         &__shadow-left{
@@ -206,7 +206,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 100vw;
             height: 50vh;
             transform: translateY(100%);
-            background-image: url('../assets/history/background_play_and_check/background_left_shadow.png');
+            background-image: url('../assets/history/background_play_and_check/background_left_shadow.webp');
             background-size: cover;
         }
         &__clouds-wrapper{
@@ -224,7 +224,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             opacity: 0.9;
             min-width: 100vw;
             height: 100vh;
-            background-image: url('../assets/particles/history/clouds_two.png');
+            background-image: url('../assets/particles/history/clouds_two.webp');
             background-size: cover;
             @include breakpoint-down-l(large){
                 background-size: 200%;
@@ -235,7 +235,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 }
 @mixin HistoryQuestions(){
     @include breakpoint-up(large){
-        background-image: url('../assets/history/bacground_questions/background_first.jpg');
+        background-image: url('../assets/history/bacground_questions/background_first.webp');
         -webkit-transition: background-image 14s ease-in-out;
         transition: background-image 14s ease-in-out;
         animation: historyQuestions 14s ease-in-out infinite;
@@ -252,7 +252,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
     @include breakpoint-down(medium){
-        background-image: url('../assets/history/background_normal_questions.jpg');
+        background-image: url('../assets/history/background_normal_questions.webp');
         background-size: 300%;
         background-repeat: no-repeat;
         background-position: 45% 0%;
@@ -271,7 +271,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 70vw;
             height: 120vh;
             opacity: 0.9;
-            background-image: url('../assets/particles/history/circles.png');
+            background-image: url('../assets/particles/history/circles.webp');
             background-repeat: no-repeat;
             background-size: 100%;
             animation: historyCircleQuestions 5s ease-in-out forwards;
@@ -282,7 +282,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             top:0;
             width: 100vw;
             height: 100vh;
-            background-image: url('../assets/history/background_play_and_check/background_cloud_center.png');
+            background-image: url('../assets/history/background_play_and_check/background_cloud_center.webp');
             background-size: cover;
         }
         &__shadow-left{
@@ -292,7 +292,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 100vw;
             height: 50vh;
             transform: translateY(100%);
-            background-image: url('../assets/history/background_play_and_check/background_left_shadow.png');
+            background-image: url('../assets/history/background_play_and_check/background_left_shadow.webp');
             background-size: cover;
         }
         &__clouds-wrapper{
@@ -310,7 +310,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             opacity: 0.9;
             min-width: 120vw;
             height: 120vh;
-            background-image: url('../assets/particles/history/clouds_two.png');
+            background-image: url('../assets/particles/history/clouds_two.webp');
             background-size: cover;
             @include breakpoint-down-l(large){
                 background-size: 200%;
@@ -321,7 +321,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
 }
 @mixin HistoryDragAndDrop(){
     @include breakpoint-up(large){
-        background-image: url('../assets/history/background_drag/background_drag_one.jpg');
+        background-image: url('../assets/history/background_drag/background_drag_one.webp');
         -webkit-transition: background-image 14s ease-in-out;
         transition: background-image 14s ease-in-out;
         animation: historyDragAndDrop 14s ease-in-out infinite;
@@ -338,7 +338,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
         }
     }
     @include breakpoint-down(medium){
-        background-image: url('../assets/history/background_drag.jpg');
+        background-image: url('../assets/history/background_drag.webp');
         background-size: 300%;
         background-repeat: no-repeat;
         background-position: 45% 0%;
@@ -358,7 +358,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 100vw;
             height: 140vh;
             opacity: 0.9;
-            background-image: url('../assets/particles/history/circles.png');
+            background-image: url('../assets/particles/history/circles.webp');
             background-repeat: no-repeat;
             background-size: 70%;
             animation: historyCircleDrag 5s ease-in-out forwards;
@@ -372,7 +372,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             top:0;
             width: 100vw;
             height: 100vh;
-            background-image: url('../assets/history/background_play_and_check/background_cloud_center.png');
+            background-image: url('../assets/history/background_play_and_check/background_cloud_center.webp');
             background-size: cover;
         }
         &__shadow-left{
@@ -382,7 +382,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             width: 100vw;
             height: 50vh;
             transform: translateY(100%);
-            background-image: url('../assets/history/background_play_and_check/background_left_shadow.png');
+            background-image: url('../assets/history/background_play_and_check/background_left_shadow.webp');
             background-size: cover;
         }
         &__clouds-wrapper{
@@ -400,7 +400,7 @@ $breakpoints-down:("small":"39.9375em", "sm-med":"33.75em","medium-sm":"63em","m
             opacity: 0.9;
             min-width: 120vw;
             height: 120vh;
-            background-image: url('../assets/particles/history/clouds_two.png');
+            background-image: url('../assets/particles/history/clouds_two.webp');
             background-size: cover;
             @include breakpoint-down-l(large){
                 background-size: 200%;
