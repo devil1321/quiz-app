@@ -19,16 +19,22 @@ const DragAnswer = ({index,text,theme,list}) => {
                     btn.style.left = '-5%'
                     btn.style.width = '250px'
                 })
-            }else if(size >= 768){
+            }
+        }
+        if(load === false && !isBack){
+            if(size >= 768){
                 btns.forEach(btn=>{
-                    btn.style.position = 'relative'
-                    btn.style.bottom = '-400px'
-                    btn.style.left = '0%'
-                    btn.style.margin = '0px'
-                    btn.style.width = '200px'
+                btn.style.position = 'relative'
+                btn.style.bottom = '-1000px'
+                btn.style.left = '0%'
+                btn.style.margin = '0px'
+                btn.style.width = '200px'
                 })
             }
         }
+    
+        
+    
         if(load === false && !isBack){
             comesIn()
             setLoad(true)

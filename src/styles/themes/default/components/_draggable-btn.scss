@@ -6,7 +6,7 @@
     color:$white;
     position: relative;
     z-index:10;
-    bottom:-400px;
+    bottom:-1000px;
     left:0px;
     opacity: 0;
     @include breakpoint-down(small){
