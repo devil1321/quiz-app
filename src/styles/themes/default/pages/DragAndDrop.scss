@@ -1,0 +1,231 @@
+
+.list{
+    @include breakpoint-down(small){
+        background-size: 575% !important;
+    }
+}
+.draggable{
+    .header{
+        margin-bottom: 25px;
+    }
+    .question{
+        margin-bottom: 15px;
+    }
+    @include breakpoint-down(small){
+        height: 750px;
+    }
+    @include breakpoint-down-l(small){
+        height: 600px;
+    }
+    @media (max-width:320px){
+        height: 760px;
+    }
+    @include set-container();
+    &__action{
+        margin-left: 60px;
+        @include breakpoint-down(small){
+            margin-left: 0px;
+        }
+    }
+    &__answers{
+        max-width: 1150px;
+        @include btnGroup();
+        @include createFlex(row,flex-start,null,wrap);
+        @include breakpoint-down(medium-sm){
+            width: 100%;
+        }
+        @include breakpoint-down-l(medium-sm){
+            justify-content: center;
+            margin-left: -30px;
+        }
+        @include breakpoint-down(small){
+            width: 100%;
+            justify-content: center;
+            margin-left: -10px;
+        }
+        .draggable--row{
+            @include createFlex(row,flex-start,null,null);
+        }
+    }
+    &__subtitle{
+        position: relative;
+        left:0px;
+        top:0px;
+        z-index: 10;
+        font-weight: $f-slim;
+        text-align: center;
+        margin-left: -50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include breakpoint-down(medium){
+            margin-left: 0px;
+        }
+    }
+    &__answer{
+        margin: 30px auto;
+        width: 20%;
+        position: relative;
+        top:0px;
+        left:-80px;
+        z-index: 10;
+        text-align: center;
+        @include breakpoint-down(small){
+            left: -20px;
+        }
+    }
+    &__correct-text,
+    &__wrong-text{
+        position: absolute;
+        top:-15px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        @include background-cover;
+        @include breakpoint-down(small){
+            right: -70px;
+        }
+    }
+    &__correct-text{
+        background-image: url('../../../../assets/code/correct.webp');
+    }
+    &__wrong-text{
+        background-image: url('../../../../assets/code/wrong.webp');
+    }
+    &.technology{
+        background-image: url('../../../../assets/technology/background_drag_normal.webp');
+        @include background-cover;
+        @media (max-width:1365px){
+            background-size: 130%;
+        }
+        @media (max-width:937px){
+            background-size: 160%;
+        }
+        @media (max-width:743px){
+            background-size: 310%;
+        }
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 280%;
+            background-position: 0px -100px;
+        }
+      
+        @media (max-device-width:1024px) and (max-device-height:768px) and (orientation:landscape){
+            background-size: 180%;
+        }
+        @include breakpoint-down-l(medium){
+            height:100%;
+            background-size: 250%;
+        }
+        @include breakpoint-down(small){
+            background-size: 450%;
+            height:100%;
+        }
+        @media (max-device-width:568px) and (max-device-height:320px) and (orientation:landscape){
+            background-size: 240%;
+        }
+        @media (max-device-width:320px){
+            height: 100%;
+            background-size: 480%;
+            background-position: 70% 0%;
+        }
+        @media (max-device-width:568px) and (orientation:landscape){
+            height:100%;
+
+        }
+      
+    }
+    &.culture{
+        background-image: url('../../../../assets/culture/background_drag_normal.webp');
+        @include background-cover;
+        @media (max-width:1365px){
+            background-size: 130%;
+        }
+        @media (max-width:937px){
+            background-size: 160%;
+        }
+        @media (max-width:743px){
+            background-size: 310%;
+        }
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 300%;
+            background-position: 50% -100px;
+        }
+        @include breakpoint-down(small){
+            height: 100%;
+            background-size: 450%;
+            background-position: 50% 0px;
+        }
+    
+    }
+    &.automotive{
+        background-image: url('../../../../assets/automotive/background_drag_noemal.webp');
+        @include background-cover;
+        @media (max-width:1365px){
+            background-size: 130%;
+        }
+        @media (max-width:937px){
+            background-size: 160%;
+        }
+        @media (max-width:743px){
+            background-size: 310%;
+        }
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 270%;
+            background-position: 30% -100px;
+        }
+        @include breakpoint-down(small){
+            height: 100%;
+            background-size: 500%;
+            background-position: 30% 0px;
+
+        }
+        @media (max-device-width:568px) and (orientation:landscape){
+            height: 100%;
+        }
+    }
+    &.code{
+        background-image: url('../../../../assets/code/background_drag_normal.webp');
+        
+        @include background-cover;
+        @media (max-width:1365px){
+            background-size: 130%;
+        }
+        @media (max-width:937px){
+            background-size: 160%;
+        }
+        @media (max-width:743px){
+            background-size: 310%;
+        }
+        @include breakpoint-down(medium){
+            background-size: 300%;
+            background-position: 0px -100px;
+        }
+        @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+            background-size: 150%;
+            background-position: 100% 0%;
+        }
+    
+        @include breakpoint-down(small){
+            background-size: 450%;
+            height:100%;
+        }
+        @include breakpoint-down-l(medium){
+            background-size: 530%
+        }
+        @media (max-width:320px){
+            background-size: 520%;
+            height:100%;
+        }
+    }
+    &.history{
+       @include HistoryDragAndDrop();
+    }    
+}

@@ -1,0 +1,73 @@
+
+.drop{
+    width: 60%;
+    margin:10px auto 20px;
+    position: relative;
+    z-index:10;
+    left: -20px;
+    top:0px;
+    @include createFlex(row,center,center,null);
+    @include breakpoint-down(small){
+        justify-content: center;
+        left: 0px;
+      
+    }
+    &__text{
+        @include breakpoint-down(small){
+            display: none;
+        }
+    }
+    &__place{
+        position: relative;
+        top:0px;
+        left:0px;
+        margin: 0px 10px;
+        width: 200px;
+        height: 100px;
+        border-radius: 15px;
+        border:2px solid $purple;
+        @include breakpoint-down(small){
+            width: 150px;
+            margin:0px;
+        }
+        &:hover{
+            filter: drop-shadow(0px 0px 8px $purple);
+        }
+       
+    }
+    &__correct,
+    &__wrong{
+        position: absolute;
+        z-index: 11;
+        top:-15px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        @include background-cover;
+    }
+    &__correct{
+        background-image: url('../../../../assets/code/correct.webp');
+    }
+    &__wrong{
+        background-image: url('../../../../assets/code/wrong.webp');
+    }
+}
+.draggable__btn.dropped{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.draggable__btn.dropped{
+    margin:0px -2px 0px 0px !important;
+    @include breakpoint-down(medium){
+        margin:0px -3px 0px 0px !important;
+    }
+    @include breakpoint-down(small){
+        width: 124px !important;
+        margin:0px -2px 0px 0px !important;
+    }
+    @media (max-device-width:320px){
+        width: 123px !important;
+        height: 99px !important;
+        margin:0px -1px 0px 0px !important;
+    }
+}

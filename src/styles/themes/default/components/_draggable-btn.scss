@@ -1,0 +1,83 @@
+.draggable__btn{
+    cursor: grab;
+    width: 200px;
+    height: 100px;
+    margin:0px;
+    color:$white;
+    position: relative;
+    z-index:10;
+    bottom:-1000px;
+    left:0px;
+    opacity: 0;
+    @include breakpoint-down(small){
+        width: 130px;
+        margin: 5px 15px;
+    }
+    @media (max-width:320px){
+        width: 110px;
+    }
+    p{  
+        width: 90%;
+        margin:0px auto;
+        padding-left: 20px;
+        padding-top:20px; 
+        font-size: pxToRem(13);
+        @include breakpoint-down(small){
+            padding-left: 7px;
+            padding-top:15px; 
+            line-height: 1.2;
+            font-size: pxToRem(12) !important;
+        }
+    }
+    &-technology{
+        @include draggableBtn();
+        background-image: url('../../../../assets/technology/button_drag.webp');
+        @include breakpoint-up(large){
+            &:hover{
+                background-image: url('../../../../assets/code/button_drag_hover.webp');
+            }
+        }
+    }
+    &-culture{
+        @include draggableBtn();
+        background-image: url('../../../../assets/culture/button_drag.webp');
+        @include breakpoint-up(large){
+            &:hover{
+                background-image: url('../../../../assets/culture/button_drag_hover.webp');
+            }
+        }
+    }
+    &-automotive{
+        
+        @include draggableBtn();
+        background-image: url('../../../../assets/automotive/buttom_drag.webp');
+        @include breakpoint-up(large){
+            &:hover{
+                background-image: url('../../../../assets/automotive/buttom_drag_hover.webp');
+            }
+        }
+    }
+    &-code{        
+        @include draggableBtn();
+        background-image: url('../../../../assets/code/button_drag.webp');
+        @include breakpoint-up(large){
+            &:hover{
+                background-image: url('../../../../assets/code/button_drag_hover.webp');
+            }
+        }
+    }
+    &-history{       
+        @include draggableBtn();
+        background-image: url('../../../../assets/history/button_drag.webp');
+        @include breakpoint-up(large){
+            &:hover{
+                background-image: url('../../../../assets/history/button_hover.webp');
+            }
+        }
+    }
+}
+.list{
+    @include breakpoint-down(small){
+        margin:0px !important;
+    }
+}

@@ -1,0 +1,32 @@
+/*-----------------global-start------------------*/
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    @include breakpoint-down-l(medium){
+        overflow-y: visible;
+    }
+    @include breakpoint-down(small){
+        overflow-y: visible;
+    }
+    @include breakpoint-down-l(small){
+        overflow-y: visible;
+    }
+}
+h1{
+    font-family: $f-fam;
+    font-size: pxToRem(25);
+    font-weight: $f-slim;
+    color:$white;
+}
+P,span,h2{
+    font-family: $f-fam;
+    color:$white;
+}
+a{
+    text-decoration: none;
+}
