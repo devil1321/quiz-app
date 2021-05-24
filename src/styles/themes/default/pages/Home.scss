@@ -3,9 +3,7 @@
     background-size: 100%;
     &.technology{       
         background-image: url('../../../../assets/technology/background_check_normal.webp');
-        @media (max-width:1365px){
-            background-size: 130%;
-        }
+     
         @media (max-width:937px){
             background-size: 160%;
         }
@@ -29,9 +27,7 @@
     }
     &.culture{
         background-image: url('../../../../assets/culture/background_check_normal.webp');
-        @media (max-width:1365px){
-            background-size: 130%;
-        }
+ 
         @media (max-width:937px){
             background-size: 160%;
         }
@@ -54,9 +50,7 @@
     &.automotive{
         background-image: url('../../../../assets/automotive/background_check.webp');
         background-size: cover;
-        @media (max-width:1365px){
-            background-size: 130%;
-        }
+    
         @media (max-width:937px){
             background-size: 160%;
         }
@@ -79,7 +73,7 @@
     }
     &.code{
         background-image: url('../../../../assets/code/background_home_normal.webp');
-        @media (max-width:1365px){
+        @media (max-width:1265px){
             background-size: 130%;
         }
         @media (max-width:937px){
