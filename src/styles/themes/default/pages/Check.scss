@@ -52,8 +52,9 @@
     }
     &__header-wrapper-bottom{
         .header{
-           
-            transform: translateX(-320px);
+            @media (max-width:1366px){
+                transform: translateX(-23.5%) !important;
+            }
             @include breakpoint-down(medium){
                 transform: translateX(-190px);
             }
