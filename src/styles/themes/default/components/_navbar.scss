@@ -11,6 +11,9 @@
         width: 100%;
     }
     &__item{
+        position: relative;
+        top:0px;
+        left:0px;
         cursor: pointer;
         opacity: 0;
         margin:0px 10px;
@@ -43,6 +46,10 @@
             animation: fadeIn 1.2s ease-in-out 1.2s forwards;
         } 
         p{
+            position: relative;
+            top:0px;
+            left:0px;
+            z-index: 3;
             font-size: pxToRem(12);
             transition: all 300ms ease-in-out;
             @include breakpoint-down(medium){
@@ -53,6 +60,10 @@
             }
         }
         img{
+            position: relative;
+            top:0px;
+            left:0px;
+            z-index: 3;
             width: 50%;
         }
         &:hover{
@@ -63,37 +74,116 @@
         &.technology{
             background-image: url('../../../../assets/technology/category.webp');
             @include background-cover();
-            &:hover{
-                background-image: url('../../../../assets/technology/category_hover.webp');
-            }
+          
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top:0px;
+                    left:0px;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    background-size: 100% 100%;
+                    opacity: 0;
+                    background-image: url('../../../../assets/technology/category_hover.webp');
+                    transition: all 500ms ease-in-out;
+                }
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+
         }
         &.culture{
             background-image: url('../../../../assets/culture/category.webp');
             @include background-cover();
-            &:hover{
+            &::after{
+                content: '';
+                position: absolute;
+                top:0px;
+                left:0px;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                opacity: 0;
                 background-image: url('../../../../assets/culture/category_hover.webp');
+                transition: all 500ms ease-in-out;
             }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
+            }
+          
         }
         &.automotive{
             background-image: url('../../../../assets/automotive/category.webp');
             @include background-cover();
-            &:hover{
+            &::after{
+                content: '';
+                position: absolute;
+                top:0px;
+                left:0px;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                opacity: 0;
                 background-image: url('../../../../assets/automotive/category_hover.webp');
+                transition: all 500ms ease-in-out;
             }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
+            }
+        
         }
         &.code{
             background-image: url('../../../../assets/code/nav_item_bg.webp');
             @include background-cover();
-            &:hover{
+            &::after{
+                content: '';
+                position: absolute;
+                top:0px;
+                left:0px;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                opacity: 0;
                 background-image: url('../../../../assets/code/nav_item_bg_hover.webp');
+                transition: all 500ms ease-in-out;
+            }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
             }
         }
         &.history{
             background-image: url('../../../../assets/history/category.webp');
             @include background-cover();
-            &:hover{
+            &::after{
+                content: '';
+                position: absolute;
+                top:0px;
+                left:0px;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background-size: 100% 100%;
+                opacity: 0;
                 background-image: url('../../../../assets/history/category_hover.webp');
+                transition: all 500ms ease-in-out;
             }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
+            } 
         }
     }
     &__line{

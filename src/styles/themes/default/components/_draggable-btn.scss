@@ -17,6 +17,10 @@
         width: 110px;
     }
     p{  
+        position: relative;
+        top:0px;
+        left:0px;
+        z-index: 3;
         width: 90%;
         margin:0px auto;
         padding-left: 20px;
@@ -33,18 +37,26 @@
         @include draggableBtn();
         background-image: url('../../../../assets/technology/button_drag.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
+             
                 background-image: url('../../../../assets/code/button_drag_hover.webp');
+             
             }
+          
+          
         }
     }
     &-culture{
         @include draggableBtn();
         background-image: url('../../../../assets/culture/button_drag.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
+           
                 background-image: url('../../../../assets/culture/button_drag_hover.webp');
+          
             }
+         
+         
         }
     }
     &-automotive{
@@ -52,27 +64,34 @@
         @include draggableBtn();
         background-image: url('../../../../assets/automotive/buttom_drag.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
+        
                 background-image: url('../../../../assets/automotive/buttom_drag_hover.webp');
+             
             }
+          
+      
         }
     }
     &-code{        
         @include draggableBtn();
         background-image: url('../../../../assets/code/button_drag.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/code/button_drag_hover.webp');
+    
             }
+
         }
     }
     &-history{       
         @include draggableBtn();
         background-image: url('../../../../assets/history/button_drag.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/history/button_hover.webp');
             }
+            
         }
     }
 }

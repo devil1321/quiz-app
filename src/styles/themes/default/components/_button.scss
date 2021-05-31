@@ -22,13 +22,14 @@
         @include buttonGlobal();
         background-image: url('../../../../assets/technology/button_play.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/technology/button_hover.webp');
             }
         }
     
         &-icon{
             position: relative;
+            z-index: 3;
             top:0px;
             right:10px;
             background-image: url('../../../../assets/technology/play.webp');
@@ -56,16 +57,17 @@
     &__culture{
         @include buttonGlobal();
         background-image: url('../../../../assets/culture/button.webp');
-        @include breakpoint-up(large){
-            &:hover{
+        @include breakpoint-up(large){   
+            &::after{
                 background-image: url('../../../../assets/culture/button_hover.webp');
-            }    
+            }
         }
      
         &-icon{
             position: relative;
+            z-index: 3;
             top:0px;
-            right: 10px;
+            right:10px;
             background-image: url('../../../../assets/culture/button_play.webp');
         }
         &-icon-correct{
@@ -92,15 +94,17 @@
         @include buttonGlobal();
         background-image: url('../../../../assets/automotive/buttom_play_bg.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/automotive/button_hover.webp');
             }
+            
         }
-  
+      
         &-icon{
             position: relative;
+            z-index: 3;
             top:0px;
-            right: 10px;
+            right:10px;
             background-image: url('../../../../assets/automotive/play.webp');
         }
         &-icon-correct{
@@ -127,13 +131,16 @@
         @include buttonGlobal();
         background-image: url('../../../../assets/code/button_play.webp');
         @include breakpoint-up(large){
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/code/button_play_hover.webp');
             }
+         
         }
+        
        
         &-icon{
             position: relative;
+            z-index: 3;
             top:0px;
             right: 10px;
             background-image: url('../../../../assets/code/play.webp');
@@ -160,19 +167,20 @@
     }
     &__history{
         @include buttonGlobal();
-       
         background-image: url('../../../../assets/history/button.webp');
         transition: all 300ms ease-in-out;
         @include breakpoint-up(large){            
-            &:hover{
+            &::after{
                 background-image: url('../../../../assets/history/button_hover.webp');
             }
+        
         }
      
         &-icon{
             position: relative;
             top:0px;
             right: 10px;
+            z-index: 3;
             background-image: url('../../../../assets/history/arrow_play.webp');
         }
         &-icon-correct{
@@ -196,6 +204,10 @@
         }
     }
     &__answer{
+        position: relative;
+        top:0px;
+        left:0px;
+        z-index: 3;
         width: 90%;
         font-size: pxToRem(12);
         line-height: 1.1;
