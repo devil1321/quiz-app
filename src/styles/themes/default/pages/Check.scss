@@ -52,9 +52,26 @@
     }
     &__header-wrapper-bottom{
         .header{
-            @media (max-width:1366px){
-                transform: translateX(-23.5%) !important;
+                 
+            @media (min-width:1367px) and (max-width:1850px){
+                transform: translateX(-24%) ;
             }
+                   
+            @media (min-width:1850px){
+                transform: translateX(-24.5%) ;
+            }
+            @media (min-width:1950px) {
+                transform: translateX(-25.5%) ;
+            }
+            @media (min-width:2650px) {
+                transform: translateX(-26%) ;
+            }
+            @media (max-width:1366px){
+                transform: translateX(-23.5%) ;
+            }
+           
+    
+      
             @include breakpoint-down(medium){
                 transform: translateX(-190px);
             }
@@ -97,6 +114,34 @@
                     margin-bottom:-60px;
                 }
                 h1{
+                    @media (min-width:1367px) and (max-width:1600px){
+                        transform: translateX(4%);
+                    }
+                           
+                    @media (min-width:1600px){
+                        transform: translateX(8%);
+                    }
+                    @media (min-width:1650px) {
+                        transform: translateX(9%);
+                    }
+                    @media (min-width:1750px) {
+                        transform: translateX(10%);
+                    }
+                    @media (min-width:1850px) {
+                        transform: translateX(12%);
+                    }
+                    @media (min-width:1950px) {
+                        transform: translateX(15%);
+                    }
+                    @media (min-width:2300px) {
+                        transform: translateX(18%);
+                    }
+                    @media (min-width:2500px) {
+                        transform: translateX(20%);
+                    }
+                    @media (min-width:3000px) {
+                        transform: translateX(27%);
+                    }
                     margin-left: 200px;
                     @include breakpoint-down(medium){
                         margin-left: 80px;
@@ -363,7 +408,7 @@
             background-position: 50% 50%;
         }
         @include breakpoint-down(medium){
-            background-size: 400%;
+            background-size: 270%;
             background-position: 50% -100px;
         }
         @media (max-width:320px){
